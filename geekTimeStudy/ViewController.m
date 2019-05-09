@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <Masonry.h>
+#import "NSObject+MyCalculate.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIView *view = [[UIView alloc] init];
+    [self.view addSubview:view];
+    
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(self.view).offset(10);
+    }];
+    
+    [self hd_makeCalculate:^(CManager * _Nonnull make) {
+        make.add(10).add(10).add(10);
+    }];
+    
 }
 
 
