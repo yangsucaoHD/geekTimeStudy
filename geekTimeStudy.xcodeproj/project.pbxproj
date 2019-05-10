@@ -20,6 +20,26 @@
 		A4E11AAD2283FB8700E1718D /* geekTimeStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11AAC2283FB8700E1718D /* geekTimeStudyTests.m */; };
 		A4E11AB82283FB8700E1718D /* geekTimeStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11AB72283FB8700E1718D /* geekTimeStudyUITests.m */; };
 		A4E11ACA2284053200E1718D /* MyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11AC92284053200E1718D /* MyBlock.m */; };
+		A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA4D2284EEDE00746ABD /* HDRequestMgr.m */; };
+		A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA502284F4D400746ABD /* NSString+Manager.m */; };
+		A4ECBA6C2284F96600746ABD /* ChainFunctionForCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA552284F96600746ABD /* ChainFunctionForCALayer.m */; };
+		A4ECBA6D2284F96600746ABD /* ChainFunctionForUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA5B2284F96600746ABD /* ChainFunctionForUILabel.m */; };
+		A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA5D2284F96600746ABD /* ChainFunctionForUIImageView.m */; };
+		A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA5E2284F96600746ABD /* ChainFunctionForUIControl.m */; };
+		A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA5F2284F96600746ABD /* ChainFunctionForUITableView.m */; };
+		A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA602284F96600746ABD /* ChainFunctionForUIScrollView.m */; };
+		A4ECBA722284F96700746ABD /* ChainFunctionForUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA612284F96600746ABD /* ChainFunctionForUIView.m */; };
+		A4ECBA732284F96700746ABD /* ChainFunctionForUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA622284F96600746ABD /* ChainFunctionForUIButton.m */; };
+		A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA632284F96600746ABD /* ChainFunctionForUITextField.m */; };
+		A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA642284F96600746ABD /* ChainFunctionForUITextView.m */; };
+		A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA662284F96600746ABD /* ChainFunctionForUICollectionView.m */; };
+		A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECBA682284F96600746ABD /* ChainFunctionForUICollectionViewFlowLayout.m */; };
+		A4F38CA32285173B00F0110A /* DDViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C922285173B00F0110A /* DDViewMaker.m */; };
+		A4F38CA42285173B00F0110A /* DDImageViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C962285173B00F0110A /* DDImageViewMaker.m */; };
+		A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C992285173B00F0110A /* DDTableViewMaker.m */; };
+		A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C9C2285173B00F0110A /* DDMutAttributedStringMaker.m */; };
+		A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C9E2285173B00F0110A /* DDLabelMaker.m */; };
+		A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CA12285173B00F0110A /* DDButtonMaker.m */; };
 		F69FC8A3B9853435D3AF8FFB /* libPods-geekTimeStudyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57634EF27D33F10AA3D4818F /* libPods-geekTimeStudyUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +89,48 @@
 		A4E11AB92283FB8700E1718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E11AC82284053200E1718D /* MyBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlock.h; sourceTree = "<group>"; };
 		A4E11AC92284053200E1718D /* MyBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlock.m; sourceTree = "<group>"; };
+		A4ECBA4C2284EEDE00746ABD /* HDRequestMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDRequestMgr.h; sourceTree = "<group>"; };
+		A4ECBA4D2284EEDE00746ABD /* HDRequestMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDRequestMgr.m; sourceTree = "<group>"; };
+		A4ECBA4F2284F4D400746ABD /* NSString+Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Manager.h"; sourceTree = "<group>"; };
+		A4ECBA502284F4D400746ABD /* NSString+Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Manager.m"; sourceTree = "<group>"; };
+		A4ECBA532284F96600746ABD /* ChainFunctionForUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUIView.h; sourceTree = "<group>"; };
+		A4ECBA542284F96600746ABD /* ChainFunctionForUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUIScrollView.h; sourceTree = "<group>"; };
+		A4ECBA552284F96600746ABD /* ChainFunctionForCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForCALayer.m; sourceTree = "<group>"; };
+		A4ECBA562284F96600746ABD /* ChainFunctionForUITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUITextView.h; sourceTree = "<group>"; };
+		A4ECBA572284F96600746ABD /* ChainFunctionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionHeader.h; sourceTree = "<group>"; };
+		A4ECBA582284F96600746ABD /* ChainFunctionForUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUITextField.h; sourceTree = "<group>"; };
+		A4ECBA592284F96600746ABD /* ChainFunctionForUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUIButton.h; sourceTree = "<group>"; };
+		A4ECBA5A2284F96600746ABD /* ChainFunctionForUICollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUICollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A4ECBA5B2284F96600746ABD /* ChainFunctionForUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUILabel.m; sourceTree = "<group>"; };
+		A4ECBA5C2284F96600746ABD /* ChainFunctionForUICollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUICollectionView.h; sourceTree = "<group>"; };
+		A4ECBA5D2284F96600746ABD /* ChainFunctionForUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUIImageView.m; sourceTree = "<group>"; };
+		A4ECBA5E2284F96600746ABD /* ChainFunctionForUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUIControl.m; sourceTree = "<group>"; };
+		A4ECBA5F2284F96600746ABD /* ChainFunctionForUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUITableView.m; sourceTree = "<group>"; };
+		A4ECBA602284F96600746ABD /* ChainFunctionForUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUIScrollView.m; sourceTree = "<group>"; };
+		A4ECBA612284F96600746ABD /* ChainFunctionForUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUIView.m; sourceTree = "<group>"; };
+		A4ECBA622284F96600746ABD /* ChainFunctionForUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUIButton.m; sourceTree = "<group>"; };
+		A4ECBA632284F96600746ABD /* ChainFunctionForUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUITextField.m; sourceTree = "<group>"; };
+		A4ECBA642284F96600746ABD /* ChainFunctionForUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUITextView.m; sourceTree = "<group>"; };
+		A4ECBA652284F96600746ABD /* ChainFunctionForCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForCALayer.h; sourceTree = "<group>"; };
+		A4ECBA662284F96600746ABD /* ChainFunctionForUICollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUICollectionView.m; sourceTree = "<group>"; };
+		A4ECBA672284F96600746ABD /* ChainFunctionForUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUILabel.h; sourceTree = "<group>"; };
+		A4ECBA682284F96600746ABD /* ChainFunctionForUICollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainFunctionForUICollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A4ECBA692284F96600746ABD /* ChainFunctionForUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUITableView.h; sourceTree = "<group>"; };
+		A4ECBA6A2284F96600746ABD /* ChainFunctionForUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUIControl.h; sourceTree = "<group>"; };
+		A4ECBA6B2284F96600746ABD /* ChainFunctionForUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainFunctionForUIImageView.h; sourceTree = "<group>"; };
+		A4F38C902285173B00F0110A /* DDMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMaker.h; sourceTree = "<group>"; };
+		A4F38C922285173B00F0110A /* DDViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewMaker.m; sourceTree = "<group>"; };
+		A4F38C932285173B00F0110A /* DDViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewMaker.h; sourceTree = "<group>"; };
+		A4F38C952285173B00F0110A /* DDImageViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImageViewMaker.h; sourceTree = "<group>"; };
+		A4F38C962285173B00F0110A /* DDImageViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDImageViewMaker.m; sourceTree = "<group>"; };
+		A4F38C982285173B00F0110A /* DDTableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewMaker.h; sourceTree = "<group>"; };
+		A4F38C992285173B00F0110A /* DDTableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewMaker.m; sourceTree = "<group>"; };
+		A4F38C9B2285173B00F0110A /* DDMutAttributedStringMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMutAttributedStringMaker.h; sourceTree = "<group>"; };
+		A4F38C9C2285173B00F0110A /* DDMutAttributedStringMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMutAttributedStringMaker.m; sourceTree = "<group>"; };
+		A4F38C9E2285173B00F0110A /* DDLabelMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLabelMaker.m; sourceTree = "<group>"; };
+		A4F38C9F2285173B00F0110A /* DDLabelMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLabelMaker.h; sourceTree = "<group>"; };
+		A4F38CA12285173B00F0110A /* DDButtonMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDButtonMaker.m; sourceTree = "<group>"; };
+		A4F38CA22285173B00F0110A /* DDButtonMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDButtonMaker.h; sourceTree = "<group>"; };
 		ED6047A5E2071598735CD581 /* Pods-geekTimeStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudy/Pods-geekTimeStudy.release.xcconfig"; sourceTree = "<group>"; };
 		F6129EBF8BD93A7FE4538787 /* Pods-geekTimeStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyUITests/Pods-geekTimeStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F75161A3692F898768ADB578 /* Pods-geekTimeStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyTests/Pods-geekTimeStudyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,21 +202,17 @@
 		A4E11A922283FB8500E1718D /* geekTimeStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A4ECBA4B2284EE8A00746ABD /* Chain */,
+				A4ECBA4A2284EE6800746ABD /* Block */,
 				A4E11A932283FB8500E1718D /* AppDelegate.h */,
 				A4E11A942283FB8500E1718D /* AppDelegate.m */,
 				A4E11A962283FB8500E1718D /* ViewController.h */,
 				A4E11A972283FB8500E1718D /* ViewController.m */,
-				A454487B22840E6700FF66EC /* NSObject+MyCalculate.h */,
-				A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */,
-				A454487E22840ED200FF66EC /* CManager.h */,
-				A454487F22840ED200FF66EC /* CManager.m */,
 				A4E11A992283FB8500E1718D /* Main.storyboard */,
 				A4E11A9C2283FB8700E1718D /* Assets.xcassets */,
 				A4E11A9E2283FB8700E1718D /* LaunchScreen.storyboard */,
 				A4E11AA12283FB8700E1718D /* Info.plist */,
 				A4E11AA22283FB8700E1718D /* main.m */,
-				A4E11AC82284053200E1718D /* MyBlock.h */,
-				A4E11AC92284053200E1718D /* MyBlock.m */,
 			);
 			path = geekTimeStudy;
 			sourceTree = "<group>";
@@ -175,6 +233,132 @@
 				A4E11AB92283FB8700E1718D /* Info.plist */,
 			);
 			path = geekTimeStudyUITests;
+			sourceTree = "<group>";
+		};
+		A4ECBA4A2284EE6800746ABD /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				A4E11AC82284053200E1718D /* MyBlock.h */,
+				A4E11AC92284053200E1718D /* MyBlock.m */,
+				A454487B22840E6700FF66EC /* NSObject+MyCalculate.h */,
+				A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */,
+				A454487E22840ED200FF66EC /* CManager.h */,
+				A454487F22840ED200FF66EC /* CManager.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		A4ECBA4B2284EE8A00746ABD /* Chain */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C8F2285173B00F0110A /* DDMaker */,
+				A4ECBA522284F96600746ABD /* ChainFunction */,
+				A4ECBA4C2284EEDE00746ABD /* HDRequestMgr.h */,
+				A4ECBA4D2284EEDE00746ABD /* HDRequestMgr.m */,
+				A4ECBA4F2284F4D400746ABD /* NSString+Manager.h */,
+				A4ECBA502284F4D400746ABD /* NSString+Manager.m */,
+			);
+			path = Chain;
+			sourceTree = "<group>";
+		};
+		A4ECBA522284F96600746ABD /* ChainFunction */ = {
+			isa = PBXGroup;
+			children = (
+				A4ECBA532284F96600746ABD /* ChainFunctionForUIView.h */,
+				A4ECBA542284F96600746ABD /* ChainFunctionForUIScrollView.h */,
+				A4ECBA552284F96600746ABD /* ChainFunctionForCALayer.m */,
+				A4ECBA562284F96600746ABD /* ChainFunctionForUITextView.h */,
+				A4ECBA572284F96600746ABD /* ChainFunctionHeader.h */,
+				A4ECBA582284F96600746ABD /* ChainFunctionForUITextField.h */,
+				A4ECBA592284F96600746ABD /* ChainFunctionForUIButton.h */,
+				A4ECBA5A2284F96600746ABD /* ChainFunctionForUICollectionViewFlowLayout.h */,
+				A4ECBA5B2284F96600746ABD /* ChainFunctionForUILabel.m */,
+				A4ECBA5C2284F96600746ABD /* ChainFunctionForUICollectionView.h */,
+				A4ECBA5D2284F96600746ABD /* ChainFunctionForUIImageView.m */,
+				A4ECBA5E2284F96600746ABD /* ChainFunctionForUIControl.m */,
+				A4ECBA5F2284F96600746ABD /* ChainFunctionForUITableView.m */,
+				A4ECBA602284F96600746ABD /* ChainFunctionForUIScrollView.m */,
+				A4ECBA612284F96600746ABD /* ChainFunctionForUIView.m */,
+				A4ECBA622284F96600746ABD /* ChainFunctionForUIButton.m */,
+				A4ECBA632284F96600746ABD /* ChainFunctionForUITextField.m */,
+				A4ECBA642284F96600746ABD /* ChainFunctionForUITextView.m */,
+				A4ECBA652284F96600746ABD /* ChainFunctionForCALayer.h */,
+				A4ECBA662284F96600746ABD /* ChainFunctionForUICollectionView.m */,
+				A4ECBA672284F96600746ABD /* ChainFunctionForUILabel.h */,
+				A4ECBA682284F96600746ABD /* ChainFunctionForUICollectionViewFlowLayout.m */,
+				A4ECBA692284F96600746ABD /* ChainFunctionForUITableView.h */,
+				A4ECBA6A2284F96600746ABD /* ChainFunctionForUIControl.h */,
+				A4ECBA6B2284F96600746ABD /* ChainFunctionForUIImageView.h */,
+			);
+			path = ChainFunction;
+			sourceTree = "<group>";
+		};
+		A4F38C8F2285173B00F0110A /* DDMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C902285173B00F0110A /* DDMaker.h */,
+				A4F38C912285173B00F0110A /* DDViewMaker */,
+				A4F38C942285173B00F0110A /* DDImageViewMaker */,
+				A4F38C972285173B00F0110A /* DDTableViewMaker */,
+				A4F38C9A2285173B00F0110A /* DDMutAttributedStringMaker */,
+				A4F38C9D2285173B00F0110A /* DDLabelMaker */,
+				A4F38CA02285173B00F0110A /* DDButtonMaker */,
+			);
+			path = DDMaker;
+			sourceTree = "<group>";
+		};
+		A4F38C912285173B00F0110A /* DDViewMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C922285173B00F0110A /* DDViewMaker.m */,
+				A4F38C932285173B00F0110A /* DDViewMaker.h */,
+			);
+			path = DDViewMaker;
+			sourceTree = "<group>";
+		};
+		A4F38C942285173B00F0110A /* DDImageViewMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C952285173B00F0110A /* DDImageViewMaker.h */,
+				A4F38C962285173B00F0110A /* DDImageViewMaker.m */,
+			);
+			path = DDImageViewMaker;
+			sourceTree = "<group>";
+		};
+		A4F38C972285173B00F0110A /* DDTableViewMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C982285173B00F0110A /* DDTableViewMaker.h */,
+				A4F38C992285173B00F0110A /* DDTableViewMaker.m */,
+			);
+			path = DDTableViewMaker;
+			sourceTree = "<group>";
+		};
+		A4F38C9A2285173B00F0110A /* DDMutAttributedStringMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C9B2285173B00F0110A /* DDMutAttributedStringMaker.h */,
+				A4F38C9C2285173B00F0110A /* DDMutAttributedStringMaker.m */,
+			);
+			path = DDMutAttributedStringMaker;
+			sourceTree = "<group>";
+		};
+		A4F38C9D2285173B00F0110A /* DDLabelMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38C9E2285173B00F0110A /* DDLabelMaker.m */,
+				A4F38C9F2285173B00F0110A /* DDLabelMaker.h */,
+			);
+			path = DDLabelMaker;
+			sourceTree = "<group>";
+		};
+		A4F38CA02285173B00F0110A /* DDButtonMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38CA12285173B00F0110A /* DDButtonMaker.m */,
+				A4F38CA22285173B00F0110A /* DDButtonMaker.h */,
+			);
+			path = DDButtonMaker;
 			sourceTree = "<group>";
 		};
 		F4EEAA4EADFEA139F8846989 /* Frameworks */ = {
@@ -389,12 +573,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */,
 				A4E11A982283FB8500E1718D /* ViewController.m in Sources */,
+				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
+				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
+				A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */,
+				A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */,
+				A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */,
+				A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */,
+				A4F38CA32285173B00F0110A /* DDViewMaker.m in Sources */,
+				A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */,
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
+				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
+				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
+				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
+				A4ECBA6D2284F96600746ABD /* ChainFunctionForUILabel.m in Sources */,
+				A4ECBA6C2284F96600746ABD /* ChainFunctionForCALayer.m in Sources */,
+				A4ECBA722284F96700746ABD /* ChainFunctionForUIView.m in Sources */,
 				A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */,
 				A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */,
+				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
+				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
+				A4ECBA732284F96700746ABD /* ChainFunctionForUIButton.m in Sources */,
+				A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */,
+				A4F38CA42285173B00F0110A /* DDImageViewMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

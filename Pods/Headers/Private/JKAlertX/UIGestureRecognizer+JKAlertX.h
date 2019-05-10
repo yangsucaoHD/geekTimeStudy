@@ -1,0 +1,1 @@
+../../../JKAlertX/JKAlertX/Category/UIGestureRecognizer+JKAlertX.h

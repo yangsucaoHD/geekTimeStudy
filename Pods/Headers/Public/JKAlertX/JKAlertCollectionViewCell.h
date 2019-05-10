@@ -1,0 +1,1 @@
+../../../JKAlertX/JKAlertX/JKAlertCollectionViewCell.h
