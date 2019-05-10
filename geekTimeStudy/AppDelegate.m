@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ViewController+Promise.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ViewController *vc = [[ViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
+    vc.view.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     return YES;

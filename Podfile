@@ -3,12 +3,16 @@
 # https://github.com/tbl00c/ZZFLEX
 # https://github.com/AllenSWB/WBNetwork
 # https://github.com/Jacky-An/JKAlertX
+# https://github.com/b52/OMPromises
 
 target 'geekTimeStudy' do
     pod 'Masonry'
     pod 'AFNetworking', "~> 3.0"
     pod 'JKAlertX'
     pod 'WBNetwork'
+    pod 'OMPromises', '~> 0.8.1'
+    pod 'ReactiveCocoa', '2.1.8'
+    
 #    pod 'ZZFLEX', :git => 'https://github.com/tbl00c/ZZFLEX.git'
 
 #    pod 'PromiseKit', '~> 6.8'

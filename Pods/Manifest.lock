@@ -16,6 +16,15 @@ PODS:
     - AFNetworking/NSURLSession
   - JKAlertX (0.3.5)
   - Masonry (1.1.0)
+  - OMPromises (0.8.1):
+    - OMPromises/Core (= 0.8.1)
+  - OMPromises/Core (0.8.1)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
   - WBNetwork (0.1.2):
     - AFNetworking
 
@@ -23,6 +32,8 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - JKAlertX
   - Masonry
+  - OMPromises (~> 0.8.1)
+  - ReactiveCocoa (= 2.1.8)
   - WBNetwork
 
 SPEC REPOS:
@@ -30,14 +41,18 @@ SPEC REPOS:
     - AFNetworking
     - JKAlertX
     - Masonry
+    - OMPromises
+    - ReactiveCocoa
     - WBNetwork
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   JKAlertX: f0dfc46337378b2084c54cd02417d9830975e8a4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OMPromises: aa67585ad14d3cfbf8fbf5b339d4e7cbb97ad6ec
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   WBNetwork: 79a337728380cdfeb08eab2a7b79b1cd60c18a8c
 
-PODFILE CHECKSUM: 5bc7fa7f27ab64467616dc07e751c1e21cb8008a
+PODFILE CHECKSUM: 5b5701d13158959915eec773c7f265eb115d4012
 
 COCOAPODS: 1.5.3

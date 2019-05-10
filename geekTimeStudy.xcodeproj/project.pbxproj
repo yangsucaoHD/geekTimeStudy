@@ -40,6 +40,11 @@
 		A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C9C2285173B00F0110A /* DDMutAttributedStringMaker.m */; };
 		A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38C9E2285173B00F0110A /* DDLabelMaker.m */; };
 		A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CA12285173B00F0110A /* DDButtonMaker.m */; };
+		A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CAA22851DBB00F0110A /* ViewController+Promise.m */; };
+		A4F38CAF22851E9A00F0110A /* ViewController+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CAE22851E9A00F0110A /* ViewController+Chain.m */; };
+		A4F38CB32285554500F0110A /* ViewController+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CB22285554500F0110A /* ViewController+Response.m */; };
+		A4F38CB82285660E00F0110A /* SMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CB52285660D00F0110A /* SMStudent.m */; };
+		A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F38CB72285660E00F0110A /* SMCreditSubject.m */; };
 		F69FC8A3B9853435D3AF8FFB /* libPods-geekTimeStudyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57634EF27D33F10AA3D4818F /* libPods-geekTimeStudyUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +136,16 @@
 		A4F38C9F2285173B00F0110A /* DDLabelMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLabelMaker.h; sourceTree = "<group>"; };
 		A4F38CA12285173B00F0110A /* DDButtonMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDButtonMaker.m; sourceTree = "<group>"; };
 		A4F38CA22285173B00F0110A /* DDButtonMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDButtonMaker.h; sourceTree = "<group>"; };
+		A4F38CA922851DBB00F0110A /* ViewController+Promise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Promise.h"; sourceTree = "<group>"; };
+		A4F38CAA22851DBB00F0110A /* ViewController+Promise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Promise.m"; sourceTree = "<group>"; };
+		A4F38CAD22851E9A00F0110A /* ViewController+Chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Chain.h"; sourceTree = "<group>"; };
+		A4F38CAE22851E9A00F0110A /* ViewController+Chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Chain.m"; sourceTree = "<group>"; };
+		A4F38CB12285554500F0110A /* ViewController+Response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Response.h"; sourceTree = "<group>"; };
+		A4F38CB22285554500F0110A /* ViewController+Response.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Response.m"; sourceTree = "<group>"; };
+		A4F38CB42285660D00F0110A /* SMCreditSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCreditSubject.h; sourceTree = "<group>"; };
+		A4F38CB52285660D00F0110A /* SMStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStudent.m; sourceTree = "<group>"; };
+		A4F38CB62285660D00F0110A /* SMStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStudent.h; sourceTree = "<group>"; };
+		A4F38CB72285660E00F0110A /* SMCreditSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCreditSubject.m; sourceTree = "<group>"; };
 		ED6047A5E2071598735CD581 /* Pods-geekTimeStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudy/Pods-geekTimeStudy.release.xcconfig"; sourceTree = "<group>"; };
 		F6129EBF8BD93A7FE4538787 /* Pods-geekTimeStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyUITests/Pods-geekTimeStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F75161A3692F898768ADB578 /* Pods-geekTimeStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyTests/Pods-geekTimeStudyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +217,8 @@
 		A4E11A922283FB8500E1718D /* geekTimeStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A4F38CB02285552800F0110A /* Response */,
+				A4F38CAC22851DC600F0110A /* Promise */,
 				A4ECBA4B2284EE8A00746ABD /* Chain */,
 				A4ECBA4A2284EE6800746ABD /* Block */,
 				A4E11A932283FB8500E1718D /* AppDelegate.h */,
@@ -213,6 +230,8 @@
 				A4E11A9E2283FB8700E1718D /* LaunchScreen.storyboard */,
 				A4E11AA12283FB8700E1718D /* Info.plist */,
 				A4E11AA22283FB8700E1718D /* main.m */,
+				A4F38CAD22851E9A00F0110A /* ViewController+Chain.h */,
+				A4F38CAE22851E9A00F0110A /* ViewController+Chain.m */,
 			);
 			path = geekTimeStudy;
 			sourceTree = "<group>";
@@ -359,6 +378,28 @@
 				A4F38CA22285173B00F0110A /* DDButtonMaker.h */,
 			);
 			path = DDButtonMaker;
+			sourceTree = "<group>";
+		};
+		A4F38CAC22851DC600F0110A /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38CA922851DBB00F0110A /* ViewController+Promise.h */,
+				A4F38CAA22851DBB00F0110A /* ViewController+Promise.m */,
+			);
+			path = Promise;
+			sourceTree = "<group>";
+		};
+		A4F38CB02285552800F0110A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A4F38CB42285660D00F0110A /* SMCreditSubject.h */,
+				A4F38CB72285660E00F0110A /* SMCreditSubject.m */,
+				A4F38CB62285660D00F0110A /* SMStudent.h */,
+				A4F38CB52285660D00F0110A /* SMStudent.m */,
+				A4F38CB12285554500F0110A /* ViewController+Response.h */,
+				A4F38CB22285554500F0110A /* ViewController+Response.m */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F4EEAA4EADFEA139F8846989 /* Frameworks */ = {
@@ -578,14 +619,17 @@
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
 				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
 				A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */,
+				A4F38CB82285660E00F0110A /* SMStudent.m in Sources */,
 				A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */,
 				A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */,
 				A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */,
 				A4F38CA32285173B00F0110A /* DDViewMaker.m in Sources */,
 				A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */,
+				A4F38CAF22851E9A00F0110A /* ViewController+Chain.m in Sources */,
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
 				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
+				A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */,
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
@@ -595,8 +639,10 @@
 				A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */,
 				A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */,
 				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
+				A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */,
 				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
 				A4ECBA732284F96700746ABD /* ChainFunctionForUIButton.m in Sources */,
+				A4F38CB32285554500F0110A /* ViewController+Response.m in Sources */,
 				A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */,
 				A4F38CA42285173B00F0110A /* DDImageViewMaker.m in Sources */,
 			);
