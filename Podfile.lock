@@ -19,6 +19,15 @@ PODS:
   - OMPromises (0.8.1):
     - OMPromises/Core (= 0.8.1)
   - OMPromises/Core (0.8.1)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.4):
+    - PromiseKit/CorePromise
   - ReactiveCocoa (2.1.8):
     - ReactiveCocoa/Core (= 2.1.8)
     - ReactiveCocoa/no-arc (= 2.1.8)
@@ -33,6 +42,7 @@ DEPENDENCIES:
   - JKAlertX
   - Masonry
   - OMPromises (~> 0.8.1)
+  - PromiseKit (~> 6.8)
   - ReactiveCocoa (= 2.1.8)
   - WBNetwork
 
@@ -42,6 +52,7 @@ SPEC REPOS:
     - JKAlertX
     - Masonry
     - OMPromises
+    - PromiseKit
     - ReactiveCocoa
     - WBNetwork
 
@@ -50,9 +61,10 @@ SPEC CHECKSUMS:
   JKAlertX: f0dfc46337378b2084c54cd02417d9830975e8a4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OMPromises: aa67585ad14d3cfbf8fbf5b339d4e7cbb97ad6ec
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   WBNetwork: 79a337728380cdfeb08eab2a7b79b1cd60c18a8c
 
-PODFILE CHECKSUM: 5b5701d13158959915eec773c7f265eb115d4012
+PODFILE CHECKSUM: f6ba15d6b3ee628bf36b52bb9b3b5187a295ecb8
 
 COCOAPODS: 1.5.3

@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
-
-NS_ASSUME_NONNULL_BEGIN
+#import <PromiseKit.h>
 
 @interface ViewController (Promise)
+#pragma mark - public old
+-(void)jsonPostUrl:(NSString*)url params:(NSDictionary<NSString *,id>*)params success:(nullable void (^)(NSURLSessionDataTask *task, NSDictionary* responseDic))success
+           failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
+#pragma mark - public new
+-(AnyPromise*)jsonPostUrl:(NSString*)url params:(NSDictionary<NSString *,id>*)params;
 @end
 
-NS_ASSUME_NONNULL_END

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19F2F0953C1F1BCE28C6D159 /* libPods-geekTimeStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */; };
 		51F2FC9888E5EB10CAD193D0 /* libPods-geekTimeStudyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42083A1494AEA2712CF8E599 /* libPods-geekTimeStudyTests.a */; };
+		8D6C72D3BA7A33CA4A83BFEB /* libPods-geekTimeStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */; };
+		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
+		A4DE378A22893E6C005B8B9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE378922893E6C005B8B9F /* Test.swift */; };
 		A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A942283FB8500E1718D /* AppDelegate.m */; };
 		A4E11A982283FB8500E1718D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A972283FB8500E1718D /* ViewController.m */; };
 		A4E11A9B2283FB8500E1718D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E11A992283FB8500E1718D /* Main.storyboard */; };
@@ -72,10 +74,14 @@
 		42083A1494AEA2712CF8E599 /* libPods-geekTimeStudyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekTimeStudyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57634EF27D33F10AA3D4818F /* libPods-geekTimeStudyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekTimeStudyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B85F2CF755BBB2CA9BCC800 /* Pods-geekTimeStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyTests/Pods-geekTimeStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
 		A454487B22840E6700FF66EC /* NSObject+MyCalculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MyCalculate.h"; sourceTree = "<group>"; };
 		A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MyCalculate.m"; sourceTree = "<group>"; };
 		A454487E22840ED200FF66EC /* CManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CManager.h; sourceTree = "<group>"; };
 		A454487F22840ED200FF66EC /* CManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CManager.m; sourceTree = "<group>"; };
+		A4DE378922893E6C005B8B9F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A4E11A902283FB8500E1718D /* geekTimeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geekTimeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E11A932283FB8500E1718D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4E11A942283FB8500E1718D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,7 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F2F0953C1F1BCE28C6D159 /* libPods-geekTimeStudy.a in Frameworks */,
+				A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */,
+				8D6C72D3BA7A33CA4A83BFEB /* libPods-geekTimeStudy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,8 @@
 			children = (
 				A4F38CA922851DBB00F0110A /* ViewController+Promise.h */,
 				A4F38CAA22851DBB00F0110A /* ViewController+Promise.m */,
+				A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */,
+				A4DE378922893E6C005B8B9F /* Test.swift */,
 			);
 			path = Promise;
 			sourceTree = "<group>";
@@ -405,6 +414,8 @@
 		F4EEAA4EADFEA139F8846989 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A411B86922891AB60060C0CF /* libOMPromises.a */,
+				A411B86722891A8E0060C0CF /* libPromiseKit.a */,
 				3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */,
 				42083A1494AEA2712CF8E599 /* libPods-geekTimeStudyTests.a */,
 				57634EF27D33F10AA3D4818F /* libPods-geekTimeStudyUITests.a */,
@@ -482,6 +493,7 @@
 				TargetAttributes = {
 					A4E11A8F2283FB8500E1718D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A4E11AA72283FB8700E1718D = {
 						CreatedOnToolsVersion = 10.1;
@@ -619,6 +631,7 @@
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
 				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
 				A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */,
+				A4DE378A22893E6C005B8B9F /* Test.swift in Sources */,
 				A4F38CB82285660E00F0110A /* SMStudent.m in Sources */,
 				A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */,
 				A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */,
@@ -815,8 +828,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AF9FF2A617D17145EE3A68E /* Pods-geekTimeStudy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -825,6 +841,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = netease.geekTimeStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geekTimeStudy/Promise/geekTimeStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -833,8 +852,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED6047A5E2071598735CD581 /* Pods-geekTimeStudy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -843,6 +865,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = netease.geekTimeStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geekTimeStudy/Promise/geekTimeStudy-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -851,6 +875,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B85F2CF755BBB2CA9BCC800 /* Pods-geekTimeStudyTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA7C6D4UU;
@@ -871,6 +896,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F75161A3692F898768ADB578 /* Pods-geekTimeStudyTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA7C6D4UU;
@@ -891,6 +917,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35D77CD7CF0DD201006C5AA3 /* Pods-geekTimeStudyUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA7C6D4UU;
 				INFOPLIST_FILE = geekTimeStudyUITests/Info.plist;
@@ -910,6 +937,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6129EBF8BD93A7FE4538787 /* Pods-geekTimeStudyUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LA7C6D4UU;
 				INFOPLIST_FILE = geekTimeStudyUITests/Info.plist;
