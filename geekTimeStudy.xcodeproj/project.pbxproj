@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		51F2FC9888E5EB10CAD193D0 /* libPods-geekTimeStudyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42083A1494AEA2712CF8E599 /* libPods-geekTimeStudyTests.a */; };
 		8D6C72D3BA7A33CA4A83BFEB /* libPods-geekTimeStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */; };
+		A40D3C94228955AF00EA367E /* SkyLab.m in Sources */ = {isa = PBXBuildFile; fileRef = A40D3C93228955AF00EA367E /* SkyLab.m */; };
+		A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40D3C962289569D00EA367E /* ABTestViewController.m */; };
+		A40D3C992289569D00EA367E /* ABTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40D3C972289569D00EA367E /* ABTestViewController.xib */; };
 		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
@@ -74,6 +77,11 @@
 		42083A1494AEA2712CF8E599 /* libPods-geekTimeStudyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekTimeStudyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57634EF27D33F10AA3D4818F /* libPods-geekTimeStudyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekTimeStudyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B85F2CF755BBB2CA9BCC800 /* Pods-geekTimeStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudyTests/Pods-geekTimeStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A40D3C92228955AF00EA367E /* SkyLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyLab.h; sourceTree = "<group>"; };
+		A40D3C93228955AF00EA367E /* SkyLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyLab.m; sourceTree = "<group>"; };
+		A40D3C952289569D00EA367E /* ABTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTestViewController.h; sourceTree = "<group>"; };
+		A40D3C962289569D00EA367E /* ABTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABTestViewController.m; sourceTree = "<group>"; };
+		A40D3C972289569D00EA367E /* ABTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABTestViewController.xib; sourceTree = "<group>"; };
 		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -199,6 +207,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A40D3C8D2289556A00EA367E /* ABTest */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3C91228955AF00EA367E /* SkyLab */,
+				A40D3C952289569D00EA367E /* ABTestViewController.h */,
+				A40D3C962289569D00EA367E /* ABTestViewController.m */,
+				A40D3C972289569D00EA367E /* ABTestViewController.xib */,
+			);
+			path = ABTest;
+			sourceTree = "<group>";
+		};
+		A40D3C91228955AF00EA367E /* SkyLab */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3C92228955AF00EA367E /* SkyLab.h */,
+				A40D3C93228955AF00EA367E /* SkyLab.m */,
+			);
+			path = SkyLab;
+			sourceTree = "<group>";
+		};
 		A4E11A872283FB8500E1718D = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +252,7 @@
 		A4E11A922283FB8500E1718D /* geekTimeStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A40D3C8D2289556A00EA367E /* ABTest */,
 				A4F38CB02285552800F0110A /* Response */,
 				A4F38CAC22851DC600F0110A /* Promise */,
 				A4ECBA4B2284EE8A00746ABD /* Chain */,
@@ -533,6 +562,7 @@
 				A4E11AA02283FB8700E1718D /* LaunchScreen.storyboard in Resources */,
 				A4E11A9D2283FB8700E1718D /* Assets.xcassets in Resources */,
 				A4E11A9B2283FB8500E1718D /* Main.storyboard in Resources */,
+				A40D3C992289569D00EA367E /* ABTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +672,7 @@
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
 				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
+				A40D3C94228955AF00EA367E /* SkyLab.m in Sources */,
 				A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */,
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
@@ -654,6 +685,7 @@
 				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
 				A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */,
 				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
+				A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */,
 				A4ECBA732284F96700746ABD /* ChainFunctionForUIButton.m in Sources */,
 				A4F38CB32285554500F0110A /* ViewController+Response.m in Sources */,
 				A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */,

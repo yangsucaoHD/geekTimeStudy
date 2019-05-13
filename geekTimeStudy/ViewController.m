@@ -44,8 +44,6 @@
         });
     });
 //#################-------PromiseKit在OC中使用-------#################
-    
-
 }
 
 - (void)viewDidAppear:(BOOL)animated {

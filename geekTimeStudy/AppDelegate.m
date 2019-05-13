@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ViewController+Promise.h"
+#import "ABTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +19,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *vc = [[ViewController alloc] init];
+    ViewController *vc = [[ABTestViewController alloc] init];//ViewController  ABTestViewController
     vc.view.backgroundColor = [UIColor whiteColor];
+    
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     return YES;
