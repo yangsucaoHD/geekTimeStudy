@@ -44,6 +44,10 @@
         });
     });
 //#################-------PromiseKit在OC中使用-------#################
+    
+    
+    //Swift learning
+    [self swiftTest];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -56,5 +60,19 @@
     [t show];
     [t testPromiseKit];
 }
+
+- (void)swiftTest {
+    SwiftLearning *s = [SwiftLearning new];
+    [s test];
+}
+
+#pragma mark - OC里面的注释写法
+//mark：添加标记1
+/* FIXME: 添加标记2  FIXME*/
+// MARK: 添加标记3 MARK
+/* !!!: 添加标记4  ！！！*/
+/* ???: 添加标记5 ？？？ */
+/* TODO: 添加标记6  TODO*/
+#warning 添加警告
 
 @end
