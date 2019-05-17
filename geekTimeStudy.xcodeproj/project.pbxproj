@@ -12,6 +12,17 @@
 		A40D3C94228955AF00EA367E /* SkyLab.m in Sources */ = {isa = PBXBuildFile; fileRef = A40D3C93228955AF00EA367E /* SkyLab.m */; };
 		A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40D3C962289569D00EA367E /* ABTestViewController.m */; };
 		A40D3C992289569D00EA367E /* ABTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40D3C972289569D00EA367E /* ABTestViewController.xib */; };
+		A40D3CAB228D567D00EA367E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CAA228D567D00EA367E /* Assets.xcassets */; };
+		A40D3CB1228D59BF00EA367E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CB0228D59BF00EA367E /* Live.storyboard */; };
+		A40D3CB6228D5A4300EA367E /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CB4228D5A4300EA367E /* Follow.storyboard */; };
+		A40D3CB8228D5A8300EA367E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CB7228D5A8300EA367E /* Profile.storyboard */; };
+		A40D3CBD228D5B1F00EA367E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CBC228D5B1F00EA367E /* MainViewController.swift */; };
+		A40D3CC5228D638600EA367E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CC4228D638600EA367E /* HomeViewController.swift */; };
+		A40D3CC8228D655300EA367E /* SwiftLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CC7228D655300EA367E /* SwiftLearning.swift */; };
+		A40D3CCD228E995000EA367E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CCC228E995000EA367E /* Person.swift */; };
+		A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CCE228E99E300EA367E /* Person+Extension.swift */; };
+		A40D3CD1228EA9CD00EA367E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CD0228EA9CD00EA367E /* Home.storyboard */; };
+		A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */; };
 		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
@@ -19,7 +30,6 @@
 		A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A942283FB8500E1718D /* AppDelegate.m */; };
 		A4E11A982283FB8500E1718D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A972283FB8500E1718D /* ViewController.m */; };
 		A4E11A9B2283FB8500E1718D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E11A992283FB8500E1718D /* Main.storyboard */; };
-		A4E11A9D2283FB8700E1718D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E11A9C2283FB8700E1718D /* Assets.xcassets */; };
 		A4E11AA02283FB8700E1718D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E11A9E2283FB8700E1718D /* LaunchScreen.storyboard */; };
 		A4E11AA32283FB8700E1718D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11AA22283FB8700E1718D /* main.m */; };
 		A4E11AAD2283FB8700E1718D /* geekTimeStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11AAC2283FB8700E1718D /* geekTimeStudyTests.m */; };
@@ -82,6 +92,17 @@
 		A40D3C952289569D00EA367E /* ABTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTestViewController.h; sourceTree = "<group>"; };
 		A40D3C962289569D00EA367E /* ABTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABTestViewController.m; sourceTree = "<group>"; };
 		A40D3C972289569D00EA367E /* ABTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABTestViewController.xib; sourceTree = "<group>"; };
+		A40D3CAA228D567D00EA367E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A40D3CB0228D59BF00EA367E /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		A40D3CB5228D5A4300EA367E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = geekTimeStudy/DouYu/Classes/Main/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		A40D3CB7228D5A8300EA367E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A40D3CBC228D5B1F00EA367E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A40D3CC4228D638600EA367E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A40D3CC7228D655300EA367E /* SwiftLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearning.swift; sourceTree = "<group>"; };
+		A40D3CCC228E995000EA367E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A40D3CCE228E99E300EA367E /* Person+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extension.swift"; sourceTree = "<group>"; };
+		A40D3CD0228EA9CD00EA367E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
 		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -96,7 +117,6 @@
 		A4E11A962283FB8500E1718D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A4E11A972283FB8500E1718D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A4E11A9A2283FB8500E1718D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A4E11A9C2283FB8700E1718D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E11A9F2283FB8700E1718D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E11AA12283FB8700E1718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E11AA22283FB8700E1718D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -227,9 +247,146 @@
 			path = SkyLab;
 			sourceTree = "<group>";
 		};
+		A40D3CA0228D4CAD00EA367E /* DouYu */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CA1228D4CC600EA367E /* Classes */,
+			);
+			path = DouYu;
+			sourceTree = "<group>";
+		};
+		A40D3CA1228D4CC600EA367E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CA7228D4D0F00EA367E /* Home */,
+				A40D3CA5228D4CEB00EA367E /* Live */,
+				A40D3CA4228D4CE300EA367E /* Profile */,
+				A40D3CA3228D4CD900EA367E /* Main */,
+				A40D3CA2228D4CD100EA367E /* Follow */,
+				A40D3CA6228D4D0200EA367E /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A40D3CA2228D4CD100EA367E /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CB4228D5A4300EA367E /* Follow.storyboard */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		A40D3CA3228D4CD900EA367E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CC3228D629500EA367E /* Controller */,
+				A40D3CC2228D628E00EA367E /* View */,
+				A40D3CC1228D628900EA367E /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A40D3CA4228D4CE300EA367E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CB7228D5A8300EA367E /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A40D3CA5228D4CEB00EA367E /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CB0228D59BF00EA367E /* Live.storyboard */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		A40D3CA6228D4D0200EA367E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CD2228EAA1B00EA367E /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A40D3CA7228D4D0F00EA367E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CC0228D61F300EA367E /* Model */,
+				A40D3CBF228D61E800EA367E /* View */,
+				A40D3CBE228D61E100EA367E /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A40D3CBE228D61E100EA367E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CC4228D638600EA367E /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A40D3CBF228D61E800EA367E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CD0228EA9CD00EA367E /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A40D3CC0228D61F300EA367E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A40D3CC1228D628900EA367E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A40D3CC2228D628E00EA367E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4E11A992283FB8500E1718D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A40D3CC3228D629500EA367E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A40D3CC6228D654100EA367E /* SwiftLearning */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CC7228D655300EA367E /* SwiftLearning.swift */,
+				A40D3CCC228E995000EA367E /* Person.swift */,
+				A40D3CCE228E99E300EA367E /* Person+Extension.swift */,
+			);
+			path = SwiftLearning;
+			sourceTree = "<group>";
+		};
+		A40D3CD2228EAA1B00EA367E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A4E11A872283FB8500E1718D = {
 			isa = PBXGroup;
 			children = (
+				A40D3CAA228D567D00EA367E /* Assets.xcassets */,
 				A4E11A922283FB8500E1718D /* geekTimeStudy */,
 				A4E11AAB2283FB8700E1718D /* geekTimeStudyTests */,
 				A4E11AB62283FB8700E1718D /* geekTimeStudyUITests */,
@@ -252,6 +409,9 @@
 		A4E11A922283FB8500E1718D /* geekTimeStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A40D3CBC228D5B1F00EA367E /* MainViewController.swift */,
+				A40D3CA0228D4CAD00EA367E /* DouYu */,
+				A40D3CC6228D654100EA367E /* SwiftLearning */,
 				A40D3C8D2289556A00EA367E /* ABTest */,
 				A4F38CB02285552800F0110A /* Response */,
 				A4F38CAC22851DC600F0110A /* Promise */,
@@ -261,8 +421,6 @@
 				A4E11A942283FB8500E1718D /* AppDelegate.m */,
 				A4E11A962283FB8500E1718D /* ViewController.h */,
 				A4E11A972283FB8500E1718D /* ViewController.m */,
-				A4E11A992283FB8500E1718D /* Main.storyboard */,
-				A4E11A9C2283FB8700E1718D /* Assets.xcassets */,
 				A4E11A9E2283FB8700E1718D /* LaunchScreen.storyboard */,
 				A4E11AA12283FB8700E1718D /* Info.plist */,
 				A4E11AA22283FB8700E1718D /* main.m */,
@@ -560,8 +718,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E11AA02283FB8700E1718D /* LaunchScreen.storyboard in Resources */,
-				A4E11A9D2283FB8700E1718D /* Assets.xcassets in Resources */,
+				A40D3CB1228D59BF00EA367E /* Live.storyboard in Resources */,
+				A40D3CD1228EA9CD00EA367E /* Home.storyboard in Resources */,
+				A40D3CB6228D5A4300EA367E /* Follow.storyboard in Resources */,
 				A4E11A9B2283FB8500E1718D /* Main.storyboard in Resources */,
+				A40D3CAB228D567D00EA367E /* Assets.xcassets in Resources */,
+				A40D3CB8228D5A8300EA367E /* Profile.storyboard in Resources */,
 				A40D3C992289569D00EA367E /* ABTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */,
 				A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */,
 				A4E11A982283FB8500E1718D /* ViewController.m in Sources */,
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
@@ -670,6 +833,8 @@
 				A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */,
 				A4F38CAF22851E9A00F0110A /* ViewController+Chain.m in Sources */,
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
+				A40D3CCD228E995000EA367E /* Person.swift in Sources */,
+				A40D3CBD228D5B1F00EA367E /* MainViewController.swift in Sources */,
 				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
 				A40D3C94228955AF00EA367E /* SkyLab.m in Sources */,
@@ -677,12 +842,15 @@
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
+				A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */,
 				A4ECBA6D2284F96600746ABD /* ChainFunctionForUILabel.m in Sources */,
+				A40D3CC5228D638600EA367E /* HomeViewController.swift in Sources */,
 				A4ECBA6C2284F96600746ABD /* ChainFunctionForCALayer.m in Sources */,
 				A4ECBA722284F96700746ABD /* ChainFunctionForUIView.m in Sources */,
 				A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */,
 				A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */,
 				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
+				A40D3CC8228D655300EA367E /* SwiftLearning.swift in Sources */,
 				A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */,
 				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
 				A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */,
@@ -725,6 +893,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A40D3CB4228D5A4300EA367E /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A40D3CB5228D5A4300EA367E /* Base */,
+			);
+			name = Follow.storyboard;
+			sourceTree = "<group>";
+		};
 		A4E11A992283FB8500E1718D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -862,11 +1038,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -886,11 +1064,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

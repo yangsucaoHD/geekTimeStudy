@@ -12,19 +12,34 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
 
-        // Do any additional setup after loading the view.
+
+}
+
+// MARK: - 设置UI界面
+extension HomeViewController {
+    func setupUI() {
+        setNavigationBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setNavigationBar() {
+        let size = CGSize(width: 44, height: 44)
+        self.navigationController?.navigationBar.backgroundColor = UIColor.gray
+//        //类方法
+//        navigationItem.leftBarButtonItem = UIBarButtonItem.createBarItem(imgName: "Image_launch_logo", highlightedImgName: "Image_launch_logo", size: CGSize.zero)
+//        let historyItem = UIBarButtonItem.createBarItem(imgName: "agreementCheck", highlightedImgName: "agreementCheck", size: size)
+//        let searchItem = UIBarButtonItem.createBarItem(imgName: "dy_navi_search", highlightedImgName: "dy_navi_search", size: size)
+//        let sweepItem = UIBarButtonItem.createBarItem(imgName: "home_newSaoicon", highlightedImgName: "home_newSaoicon", size: size)
+//        navigationItem.rightBarButtonItems = [historyItem, searchItem, sweepItem]
+//
+        //便利构造函数
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imgName: "Image_launch_logo")
+        let historyItem = UIBarButtonItem(imgName: "agreementCheck", highlightedImgName: "agreementCheck", size: size)
+        let searchItem = UIBarButtonItem(imgName: "dy_navi_search", highlightedImgName: "dy_navi_search", size: size)
+        let sweepItem = UIBarButtonItem(imgName: "home_newSaoicon", highlightedImgName: "home_newSaoicon", size: size)
+        navigationItem.rightBarButtonItems = [historyItem, searchItem, sweepItem]
+        
     }
-    */
-
 }

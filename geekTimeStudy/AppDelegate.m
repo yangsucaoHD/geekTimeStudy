@@ -19,11 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *vc = [[ABTestViewController alloc] init];//ViewController  ABTestViewController
-    vc.view.backgroundColor = [UIColor whiteColor];
-    
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
+//    ViewController *vc = [[ViewController alloc] init];//ViewController ABTestViewController
+//    vc.view.backgroundColor = [UIColor whiteColor];
+//    
+//    self.window.rootViewController = vc;
+//    [self.window makeKeyAndVisible];
+    [UITabBar appearance].tintColor = [UIColor orangeColor];
     return YES;
 }
 
