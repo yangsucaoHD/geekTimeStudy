@@ -23,6 +23,10 @@
 		A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CCE228E99E300EA367E /* Person+Extension.swift */; };
 		A40D3CD1228EA9CD00EA367E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40D3CD0228EA9CD00EA367E /* Home.storyboard */; };
 		A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */; };
+		A40D3CD7229234BF00EA367E /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CD6229234BF00EA367E /* PageTitleView.swift */; };
+		A40D3CD9229238D200EA367E /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CD8229238D200EA367E /* CommonConstant.swift */; };
+		A40D3CDB22924CF300EA367E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDA22924CF300EA367E /* PageContentView.swift */; };
+		A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDC2292514400EA367E /* UIColor+Extension.swift */; };
 		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
@@ -103,6 +107,10 @@
 		A40D3CCE228E99E300EA367E /* Person+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extension.swift"; sourceTree = "<group>"; };
 		A40D3CD0228EA9CD00EA367E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
+		A40D3CD6229234BF00EA367E /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		A40D3CD8229238D200EA367E /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		A40D3CDA22924CF300EA367E /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		A40D3CDC2292514400EA367E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -305,7 +313,9 @@
 		A40D3CA6228D4D0200EA367E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A40D3CD5229233C500EA367E /* CustomUI */,
 				A40D3CD2228EAA1B00EA367E /* Extension */,
+				A40D3CD8229238D200EA367E /* CommonConstant.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -379,8 +389,18 @@
 			isa = PBXGroup;
 			children = (
 				A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */,
+				A40D3CDC2292514400EA367E /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A40D3CD5229233C500EA367E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A40D3CD6229234BF00EA367E /* PageTitleView.swift */,
+				A40D3CDA22924CF300EA367E /* PageContentView.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		A4E11A872283FB8500E1718D = {
@@ -821,6 +841,7 @@
 				A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */,
 				A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */,
 				A4E11A982283FB8500E1718D /* ViewController.m in Sources */,
+				A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */,
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
 				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
 				A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */,
@@ -831,6 +852,7 @@
 				A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */,
 				A4F38CA32285173B00F0110A /* DDViewMaker.m in Sources */,
 				A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */,
+				A40D3CDB22924CF300EA367E /* PageContentView.swift in Sources */,
 				A4F38CAF22851E9A00F0110A /* ViewController+Chain.m in Sources */,
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
 				A40D3CCD228E995000EA367E /* Person.swift in Sources */,
@@ -838,10 +860,12 @@
 				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
 				A40D3C94228955AF00EA367E /* SkyLab.m in Sources */,
+				A40D3CD9229238D200EA367E /* CommonConstant.swift in Sources */,
 				A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */,
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
+				A40D3CD7229234BF00EA367E /* PageTitleView.swift in Sources */,
 				A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */,
 				A4ECBA6D2284F96600746ABD /* ChainFunctionForUILabel.m in Sources */,
 				A40D3CC5228D638600EA367E /* HomeViewController.swift in Sources */,
