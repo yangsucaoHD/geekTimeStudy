@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "geekTimeStudy/DouYu/Classes/Tools/CustomUI/PageTitleView.swift"
-            timestampString = "580033568.974553"
+            filePath = "geekTimeStudy/DouYu/Classes/Tools/CustomUI/PageContentView.swift"
+            timestampString = "580125814.911593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "titleLabelClicked(tap:)"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "geekTimeStudy/DouYu/Classes/Tools/CustomUI/PageContentView.swift"
-            timestampString = "580033568.975006"
+            timestampString = "580125814.912268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>

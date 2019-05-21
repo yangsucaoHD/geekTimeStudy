@@ -22,11 +22,12 @@ class HomeViewController: UIViewController {
     
     fileprivate lazy var contentPageView: PageContentView = {[weak self] in
         let pageY = kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight
-        let pageHeight = kScreenHeight - pageY
+        let pageHeight = kScreenHeight - pageY - kTabBarHeight
         let pageFrame = CGRect(x: 0, y: pageY, width: kScreenWidth, height: pageHeight)
         
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(RecommendViewController())
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -72,7 +73,6 @@ extension HomeViewController {
         let searchItem = UIBarButtonItem(imgName: "dy_navi_search", highlightedImgName: "dy_navi_search", size: size)
         let sweepItem = UIBarButtonItem(imgName: "home_newSaoicon", highlightedImgName: "home_newSaoicon", size: size)
         navigationItem.rightBarButtonItems = [historyItem, searchItem, sweepItem]
-        
     }
 }
 

@@ -19,7 +19,7 @@ class SwiftLearning: NSObject {
         print(returnFunc())
         let success = tupleTest()
         print("tupleTest result:\(success.code)➕\(success.message)")
-        repeatFunc(count: 2,task: {
+        repeatFunc(2,task: {
             print("hello repeatFunc")
         })
         
@@ -29,7 +29,7 @@ class SwiftLearning: NSObject {
         
         optionalTest()
         
-        
+        xiamageSwiftLearning()
         
     }
     
@@ -137,7 +137,7 @@ class SwiftLearning: NSObject {
         }
     }
     
-    private func repeatFunc(count: Int, task: ()->()) {
+    private func repeatFunc(_ count: Int, task: ()->()) {
         for i in 0..<count {
             task()
         }
@@ -204,7 +204,65 @@ class SwiftLearning: NSObject {
             print("no this member")
         }
     }
+    
+    func xiamageSwiftLearning() -> Void {
+        let str1 = "hello world"
+        let str2 = "fhdkfshf"
+        let str3 = str1 + str2
+        let len = str1.count
+        
+        let name = "haodan"
+        let age = 18
+        let height = 1.7
+        
+        let infoStr = "my name is \(name),age is \(age),height is \(height)!"
+        
+        let min = 3
+        let second = 4
+        let timeStr = String(format: "%02d:%02d", min,second)
+        (timeStr as NSString).substring(to: 3)
+        let range = NSRange(location: 0, length: 3)
+        (timeStr as NSString).substring(with: range)
+        
+        let array1: Array<String> = ["",""]
+        let array2: [String] = ["",""]
+        
+        var array = [String]()
+        array.append("T##newElement: String##String")
+        array.remove(at: 0)
+        array[0] = ""
+        
+        for (index,item) in array.enumerated() {}
+        let dic: [String:Any] = ["name":"haodan","age":18]
+        var dic1 = [String : Any]()
+        dic1["name"] = "haodan"
+        dic1.removeValue(forKey: "name")
+        
+        let infoTuple = ("name", 18, 1.88)
+        infoTuple.0
+        let infoTuple1 = (name:"name", age:18, height:1.88)
+        infoTuple1.name
+        
+        let (name1, age1, height1) = ("name", 18, 1.88)
+        name1
+        
+        var myName: String? = nil
+        myName = "haodan"
+        print(myName!)
+        
+        if let myName1 = dic["name"] as? String {
+             print(myName!)
+        }
+    }
 }
+
+enum MethodType {
+    case get
+    case post
+    case put
+    case delete
+}
+
 
 
 class Vehicle {
@@ -414,4 +472,9 @@ class FormulaOne: RaceCar {
     //        super.init(wheels: 4, hasTurbo: hasTurbo)
     //    }
 }
+
+
+
+
+
 

@@ -108,6 +108,8 @@ extension PageContentView : UICollectionViewDelegate {
         var sourceIndex: Int = 0
         var targetIndex: Int = 0
         
+        print(process)
+        
         let currentOffsetX = scrollView.contentOffset.x
         let base = currentOffsetX / scrollView.frame.width
         if currentOffsetX > startOffsetX {//左滑
