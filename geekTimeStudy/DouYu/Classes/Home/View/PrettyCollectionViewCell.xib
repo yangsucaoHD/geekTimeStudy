@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PrettyCollectionViewCell" customModule="geekTimeStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="VF8-9i-xlF">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="162"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播注重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEC-gr-DaV">
+                        <rect key="frame" x="10" y="167" width="54" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="rc4-8l-BZ3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ure-G0-efb">
+                        <rect key="frame" x="10" y="186" width="43" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="8bM-bb-vSo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="杭州市" image="dyla_ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mS-yJ-bRz">
+                        <rect key="frame" x="119" y="5" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29651738556338031" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="KUJ-Cd-Xd8"/>
+                            <constraint firstAttribute="height" constant="20" id="O5w-FU-owI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8mS-yJ-bRz" secondAttribute="trailing" constant="6" id="ASX-Xj-pNI"/>
+                <constraint firstAttribute="trailing" secondItem="VF8-9i-xlF" secondAttribute="trailing" id="DPz-yi-ArV"/>
+                <constraint firstItem="VF8-9i-xlF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FFo-dc-N3A"/>
+                <constraint firstItem="ure-G0-efb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="RKe-pc-dx7"/>
+                <constraint firstItem="LEC-gr-DaV" firstAttribute="top" secondItem="VF8-9i-xlF" secondAttribute="bottom" constant="5" id="Wj1-PE-OJT"/>
+                <constraint firstItem="LEC-gr-DaV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dVi-9n-ceV"/>
+                <constraint firstAttribute="bottom" secondItem="ure-G0-efb" secondAttribute="bottom" constant="5" id="ghS-Dg-QOb"/>
+                <constraint firstItem="VF8-9i-xlF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vsF-PY-yrL"/>
+                <constraint firstItem="8mS-yJ-bRz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="yef-UN-Tnt"/>
+                <constraint firstItem="ure-G0-efb" firstAttribute="top" secondItem="LEC-gr-DaV" secondAttribute="bottom" constant="3" id="zC8-i6-fQj"/>
+            </constraints>
+            <size key="customSize" width="185" height="203"/>
+            <point key="canvasLocation" x="37.600000000000001" y="134.48275862068968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default" width="300" height="116"/>
+        <image name="dyla_ico_location" width="12" height="12"/>
+    </resources>
+</document>

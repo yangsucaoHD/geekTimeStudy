@@ -42,8 +42,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-
-
 }
 
 // MARK: - 设置UI界面

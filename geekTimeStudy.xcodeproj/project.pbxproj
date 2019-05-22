@@ -31,6 +31,12 @@
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
 		A4698F9E2293FA1F00E4C13C /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */; };
+		A4698FA22294CC2800E4C13C /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FA02294CC2800E4C13C /* NormalCollectionViewCell.swift */; };
+		A4698FA32294CC2800E4C13C /* NormalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA12294CC2800E4C13C /* NormalCollectionViewCell.xib */; };
+		A4698FA62294CCD600E4C13C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FA42294CCD600E4C13C /* HeaderView.swift */; };
+		A4698FA72294CCD600E4C13C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA52294CCD600E4C13C /* HeaderView.xib */; };
+		A4698FAA2294DBDE00E4C13C /* PrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */; };
+		A4698FAB2294DBDE00E4C13C /* PrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */; };
 		A4DE378A22893E6C005B8B9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE378922893E6C005B8B9F /* Test.swift */; };
 		A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A942283FB8500E1718D /* AppDelegate.m */; };
 		A4E11A982283FB8500E1718D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A972283FB8500E1718D /* ViewController.m */; };
@@ -120,6 +126,12 @@
 		A454487E22840ED200FF66EC /* CManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CManager.h; sourceTree = "<group>"; };
 		A454487F22840ED200FF66EC /* CManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CManager.m; sourceTree = "<group>"; };
 		A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		A4698FA02294CC2800E4C13C /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4698FA12294CC2800E4C13C /* NormalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4698FA42294CCD600E4C13C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A4698FA52294CCD600E4C13C /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrettyCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4DE378922893E6C005B8B9F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A4E11A902283FB8500E1718D /* geekTimeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geekTimeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E11A932283FB8500E1718D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -325,6 +337,7 @@
 		A40D3CA7228D4D0F00EA367E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A4698F9F2294CBE700E4C13C /* ViewModel */,
 				A40D3CC0228D61F300EA367E /* Model */,
 				A40D3CBF228D61E800EA367E /* View */,
 				A40D3CBE228D61E100EA367E /* Controller */,
@@ -345,6 +358,12 @@
 			isa = PBXGroup;
 			children = (
 				A40D3CD0228EA9CD00EA367E /* Home.storyboard */,
+				A4698FA02294CC2800E4C13C /* NormalCollectionViewCell.swift */,
+				A4698FA12294CC2800E4C13C /* NormalCollectionViewCell.xib */,
+				A4698FA42294CCD600E4C13C /* HeaderView.swift */,
+				A4698FA52294CCD600E4C13C /* HeaderView.xib */,
+				A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */,
+				A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -404,6 +423,13 @@
 				A40D3CDA22924CF300EA367E /* PageContentView.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		A4698F9F2294CBE700E4C13C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A4E11A872283FB8500E1718D = {
@@ -741,9 +767,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E11AA02283FB8700E1718D /* LaunchScreen.storyboard in Resources */,
+				A4698FA72294CCD600E4C13C /* HeaderView.xib in Resources */,
 				A40D3CB1228D59BF00EA367E /* Live.storyboard in Resources */,
+				A4698FAB2294DBDE00E4C13C /* PrettyCollectionViewCell.xib in Resources */,
 				A40D3CD1228EA9CD00EA367E /* Home.storyboard in Resources */,
 				A40D3CB6228D5A4300EA367E /* Follow.storyboard in Resources */,
+				A4698FA32294CC2800E4C13C /* NormalCollectionViewCell.xib in Resources */,
 				A4E11A9B2283FB8500E1718D /* Main.storyboard in Resources */,
 				A40D3CAB228D567D00EA367E /* Assets.xcassets in Resources */,
 				A40D3CB8228D5A8300EA367E /* Profile.storyboard in Resources */,
@@ -844,6 +873,7 @@
 				A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */,
 				A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */,
 				A4E11A982283FB8500E1718D /* ViewController.m in Sources */,
+				A4698FA22294CC2800E4C13C /* NormalCollectionViewCell.swift in Sources */,
 				A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */,
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
 				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
@@ -864,9 +894,11 @@
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
 				A40D3C94228955AF00EA367E /* SkyLab.m in Sources */,
 				A40D3CD9229238D200EA367E /* CommonConstant.swift in Sources */,
+				A4698FAA2294DBDE00E4C13C /* PrettyCollectionViewCell.swift in Sources */,
 				A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */,
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
+				A4698FA62294CCD600E4C13C /* HeaderView.swift in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
 				A40D3CD7229234BF00EA367E /* PageTitleView.swift in Sources */,
 				A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */,
