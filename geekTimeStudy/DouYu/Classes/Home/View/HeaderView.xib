@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HeaderView" customModule="geekTimeStudy" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -22,7 +22,7 @@
                         <constraint firstAttribute="height" constant="10" id="FTu-ff-E3R"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-hW-RDv" customClass="pretty">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-hW-RDv">
                     <rect key="frame" x="10" y="18" width="24" height="24"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpP-6a-ToY">
@@ -51,6 +51,11 @@
                 <constraint firstItem="555-Be-fdr" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="lQ8-9R-t0d"/>
                 <constraint firstItem="gpP-6a-ToY" firstAttribute="leading" secondItem="BaT-hW-RDv" secondAttribute="trailing" constant="10" id="nEM-3W-X4J"/>
             </constraints>
+            <connections>
+                <outlet property="imgView" destination="BaT-hW-RDv" id="3fy-3u-Ob8"/>
+                <outlet property="moreBtn" destination="vcK-e2-e7j" id="Kat-Jd-dKy"/>
+                <outlet property="nameLabel" destination="gpP-6a-ToY" id="Ke0-F3-fCw"/>
+            </connections>
             <point key="canvasLocation" x="129.59999999999999" y="152.92353823088456"/>
         </collectionReusableView>
     </objects>

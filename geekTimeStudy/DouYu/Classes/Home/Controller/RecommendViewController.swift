@@ -18,7 +18,9 @@ private let kCollectionViewHeaderID = "kCollectionViewHeaderID"
 private let kHeaderViewHeight: CGFloat = 50
 
 class RecommendViewController: UIViewController {
-
+    
+        fileprivate lazy var viewModel = RecommendViewModel()
+    
         fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemWidth, height: kNormalItemHeight)
@@ -38,6 +40,7 @@ class RecommendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        requestRecommendData()
     }
 
 }
@@ -54,29 +57,30 @@ extension RecommendViewController {
 // MARK: -数据源实现
 extension RecommendViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return viewModel.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        return viewModel.anchorGroups[section].anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell : UICollectionViewCell
+        
+        var cell: RecommendBaseCollectionViewCell
+        let anchor = viewModel.anchorGroups[indexPath.section].anchors[indexPath.row]
         
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCollectionViewCellID, for: indexPath)
+           cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCollectionViewCellID, for: indexPath) as! PrettyCollectionViewCell
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCollectionViewCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCollectionViewCellID, for: indexPath) as! NormalCollectionViewCell
         }
+        cell.anchor = anchor
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headeriView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kCollectionViewHeaderID, for: indexPath)
+        let headeriView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kCollectionViewHeaderID, for: indexPath) as! HeaderView
+        headeriView.group = viewModel.anchorGroups[indexPath.section]
         return headeriView
     }
 }
@@ -90,3 +94,14 @@ extension RecommendViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: kItemWidth, height: kNormalItemHeight)
     }
 }
+
+
+// MARK: - 数据请求
+extension RecommendViewController {
+    func requestRecommendData() {
+        viewModel.requestData {
+            self.collectionView.reloadData()
+        }
+    }
+}
+

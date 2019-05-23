@@ -46,8 +46,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-Fk-LkN">
-                        <rect key="frame" x="226" y="93" width="68" height="18"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-Fk-LkN">
+                        <rect key="frame" x="230" y="97" width="64" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="111人观看" image="people"/>
                     </button>
@@ -69,12 +69,19 @@
                 <constraint firstItem="ppG-3Y-ztH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zPn-gK-0Se"/>
             </constraints>
             <size key="customSize" width="299" height="141"/>
+            <connections>
+                <outlet property="countBtn" destination="pg3-Fk-LkN" id="yqi-4e-9WF"/>
+                <outlet property="coverImgView" destination="ppG-3Y-ztH" id="r9J-Jb-P2H"/>
+                <outlet property="iconImage" destination="jyy-5v-zuf" id="Q92-Xu-bw3"/>
+                <outlet property="nameLabel" destination="EEZ-2i-CcM" id="4U1-3b-nD6"/>
+                <outlet property="tagLabel" destination="aiN-mT-LTF" id="k4y-gV-XUt"/>
+            </connections>
             <point key="canvasLocation" x="128.80000000000001" y="71.514242878560722"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="default" width="300" height="116"/>
-        <image name="people" width="18" height="18"/>
+        <image name="people" width="14" height="14"/>
         <image name="vedio" width="18" height="18"/>
     </resources>
 </document>

@@ -14,7 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.8.2)
   - JKAlertX (0.3.5)
+  - Kingfisher (4.10.1)
   - Masonry (1.1.0)
   - OMPromises (0.8.1):
     - OMPromises/Core (= 0.8.1)
@@ -39,7 +41,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Alamofire
   - JKAlertX
+  - Kingfisher
   - Masonry
   - OMPromises (~> 0.8.1)
   - PromiseKit (~> 6.8)
@@ -49,7 +53,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Alamofire
     - JKAlertX
+    - Kingfisher
     - Masonry
     - OMPromises
     - PromiseKit
@@ -58,13 +64,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   JKAlertX: f0dfc46337378b2084c54cd02417d9830975e8a4
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OMPromises: aa67585ad14d3cfbf8fbf5b339d4e7cbb97ad6ec
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   WBNetwork: 79a337728380cdfeb08eab2a7b79b1cd60c18a8c
 
-PODFILE CHECKSUM: f6ba15d6b3ee628bf36b52bb9b3b5187a295ecb8
+PODFILE CHECKSUM: c2640c1eeaa5ac9001189440fbacbd59a45914a4
 
 COCOAPODS: 1.5.3

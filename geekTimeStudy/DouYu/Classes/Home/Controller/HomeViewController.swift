@@ -74,14 +74,18 @@ extension HomeViewController {
     }
 }
 
+// MARK: - 实现PageTitleViewDelegate代理
 extension HomeViewController: PageTitleViewDelegate {
     func pageTitleView(titleView: PageTitleView, selectedIndex: Int) {
         contentPageView.setCurrentIndex(index: selectedIndex)
     }
 }
 
+// MARK: - 实现PageContentViewDelegate代理
 extension HomeViewController: PageContentViewDelegate {
     func pageContentView(pageContentView: PageContentView, process: CGFloat, sourceIndex: Int, targetIndex: Int) {
         titleView.setTitleWithProcess(process: process, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
+
+

@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import Kingfisher
 
-class NormalCollectionViewCell: UICollectionViewCell {
-
+class NormalCollectionViewCell: RecommendBaseCollectionViewCell {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
+    
+    override var anchor: AnchorModel? {
+        didSet {
+            guard let anchor = anchor else {
+                return
+            }
+            super.anchor = anchor
+            nameLabel.text = anchor.room_name
+            iconImage.image = UIImage(named: "vedio")
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

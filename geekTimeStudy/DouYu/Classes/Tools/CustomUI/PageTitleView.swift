@@ -106,6 +106,9 @@ extension PageTitleView {
 extension PageTitleView {
     @objc fileprivate func titleLabelClicked(tap:UITapGestureRecognizer)  {
         guard let currentLabel = tap.view as? UILabel else {return }
+        if tap.view?.tag == currentIndex {
+            return
+        }
         currentLabel.textColor = UIColor(r: kSelectedColor.0, g: kSelectedColor.1, b: kSelectedColor.2)
         
         let oldLabel = titleLabels[currentIndex]

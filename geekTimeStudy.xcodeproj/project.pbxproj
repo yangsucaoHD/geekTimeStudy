@@ -28,6 +28,10 @@
 		A40D3CDB22924CF300EA367E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDA22924CF300EA367E /* PageContentView.swift */; };
 		A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDC2292514400EA367E /* UIColor+Extension.swift */; };
 		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
+		A43BD4BD2294EB1800F22C4A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */; };
+		A43BD4BF2295239200F22C4A /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4BE2295239200F22C4A /* NSDate+Extension.swift */; };
+		A43BD4C1229526DB00F22C4A /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */; };
+		A43BD4C322952CF300F22C4A /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4C222952CF300F22C4A /* AnchorModel.swift */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
 		A4698F9E2293FA1F00E4C13C /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */; };
@@ -37,6 +41,8 @@
 		A4698FA72294CCD600E4C13C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA52294CCD600E4C13C /* HeaderView.xib */; };
 		A4698FAA2294DBDE00E4C13C /* PrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */; };
 		A4698FAB2294DBDE00E4C13C /* PrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */; };
+		A4698FAE2294E74A00E4C13C /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FAD2294E74A00E4C13C /* NetworkTools.swift */; };
+		A4DCF64E22961F34006BB28F /* RecommendBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DCF64D22961F34006BB28F /* RecommendBaseCollectionViewCell.swift */; };
 		A4DE378A22893E6C005B8B9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE378922893E6C005B8B9F /* Test.swift */; };
 		A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A942283FB8500E1718D /* AppDelegate.m */; };
 		A4E11A982283FB8500E1718D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A972283FB8500E1718D /* ViewController.m */; };
@@ -121,6 +127,10 @@
 		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		A43BD4BE2295239200F22C4A /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		A43BD4C222952CF300F22C4A /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		A454487B22840E6700FF66EC /* NSObject+MyCalculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MyCalculate.h"; sourceTree = "<group>"; };
 		A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MyCalculate.m"; sourceTree = "<group>"; };
 		A454487E22840ED200FF66EC /* CManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CManager.h; sourceTree = "<group>"; };
@@ -132,6 +142,8 @@
 		A4698FA52294CCD600E4C13C /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrettyCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4698FAD2294E74A00E4C13C /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		A4DCF64D22961F34006BB28F /* RecommendBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4DE378922893E6C005B8B9F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A4E11A902283FB8500E1718D /* geekTimeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geekTimeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E11A932283FB8500E1718D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -327,6 +339,7 @@
 		A40D3CA6228D4D0200EA367E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A4698FAC2294E70000E4C13C /* NetworkTools */,
 				A40D3CD5229233C500EA367E /* CustomUI */,
 				A40D3CD2228EAA1B00EA367E /* Extension */,
 				A40D3CD8229238D200EA367E /* CommonConstant.swift */,
@@ -364,6 +377,7 @@
 				A4698FA52294CCD600E4C13C /* HeaderView.xib */,
 				A4698FA82294DBDE00E4C13C /* PrettyCollectionViewCell.swift */,
 				A4698FA92294DBDE00E4C13C /* PrettyCollectionViewCell.xib */,
+				A4DCF64D22961F34006BB28F /* RecommendBaseCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +385,8 @@
 		A40D3CC0228D61F300EA367E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */,
+				A43BD4C222952CF300F22C4A /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,6 +428,7 @@
 			children = (
 				A40D3CD3228EAA7500EA367E /* UIBarButtonItem+extension.swift */,
 				A40D3CDC2292514400EA367E /* UIColor+Extension.swift */,
+				A43BD4BE2295239200F22C4A /* NSDate+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -428,8 +445,17 @@
 		A4698F9F2294CBE700E4C13C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4698FAC2294E70000E4C13C /* NetworkTools */ = {
+			isa = PBXGroup;
+			children = (
+				A4698FAD2294E74A00E4C13C /* NetworkTools.swift */,
+			);
+			path = NetworkTools;
 			sourceTree = "<group>";
 		};
 		A4E11A872283FB8500E1718D = {
@@ -873,13 +899,16 @@
 				A40D3CD4228EAA7500EA367E /* UIBarButtonItem+extension.swift in Sources */,
 				A4ECBA762284F96700746ABD /* ChainFunctionForUICollectionView.m in Sources */,
 				A4E11A982283FB8500E1718D /* ViewController.m in Sources */,
+				A43BD4BD2294EB1800F22C4A /* RecommendViewModel.swift in Sources */,
 				A4698FA22294CC2800E4C13C /* NormalCollectionViewCell.swift in Sources */,
 				A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */,
 				A4F38CA52285173B00F0110A /* DDTableViewMaker.m in Sources */,
 				A4ECBA6F2284F96600746ABD /* ChainFunctionForUIControl.m in Sources */,
+				A4698FAE2294E74A00E4C13C /* NetworkTools.swift in Sources */,
 				A4ECBA742284F96700746ABD /* ChainFunctionForUITextField.m in Sources */,
 				A4DE378A22893E6C005B8B9F /* Test.swift in Sources */,
 				A4F38CB82285660E00F0110A /* SMStudent.m in Sources */,
+				A43BD4BF2295239200F22C4A /* NSDate+Extension.swift in Sources */,
 				A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */,
 				A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */,
 				A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */,
@@ -893,11 +922,13 @@
 				A4ECBA6E2284F96600746ABD /* ChainFunctionForUIImageView.m in Sources */,
 				A4ECBA512284F4D400746ABD /* NSString+Manager.m in Sources */,
 				A40D3C94228955AF00EA367E /* SkyLab.m in Sources */,
+				A43BD4C322952CF300F22C4A /* AnchorModel.swift in Sources */,
 				A40D3CD9229238D200EA367E /* CommonConstant.swift in Sources */,
 				A4698FAA2294DBDE00E4C13C /* PrettyCollectionViewCell.swift in Sources */,
 				A4F38CB92285660E00F0110A /* SMCreditSubject.m in Sources */,
 				A4ECBA772284F96700746ABD /* ChainFunctionForUICollectionViewFlowLayout.m in Sources */,
 				A4E11ACA2284053200E1718D /* MyBlock.m in Sources */,
+				A4DCF64E22961F34006BB28F /* RecommendBaseCollectionViewCell.swift in Sources */,
 				A4698FA62294CCD600E4C13C /* HeaderView.swift in Sources */,
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
 				A40D3CD7229234BF00EA367E /* PageTitleView.swift in Sources */,
@@ -911,6 +942,7 @@
 				A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */,
 				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
 				A40D3CC8228D655300EA367E /* SwiftLearning.swift in Sources */,
+				A43BD4C1229526DB00F22C4A /* AnchorGroup.swift in Sources */,
 				A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */,
 				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
 				A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */,

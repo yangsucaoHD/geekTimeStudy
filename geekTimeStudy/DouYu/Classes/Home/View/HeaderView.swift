@@ -9,7 +9,18 @@
 import UIKit
 
 class HeaderView: UICollectionReusableView {
-
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var moreBtn: UIButton!
+    @IBOutlet weak var imgView: UIImageView!
+    
+    var group: AnchorGroup? {
+        didSet {
+            nameLabel.text = group?.tag_name
+            imgView.image = UIImage(named: "pretty")//UIImage(named: group?.icon_url ?? "pretty")
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

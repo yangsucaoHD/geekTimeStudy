@@ -46,38 +46,45 @@
                             <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mS-yJ-bRz">
-                        <rect key="frame" x="119" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.29651738556338031" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgA-Dx-jb1">
+                        <rect key="frame" x="120" y="5" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="KUJ-Cd-Xd8"/>
-                            <constraint firstAttribute="height" constant="20" id="O5w-FU-owI"/>
+                            <constraint firstAttribute="width" constant="60" id="SF0-kT-5i0"/>
+                            <constraint firstAttribute="height" constant="20" id="eKR-B4-W9l"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="1111在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="8mS-yJ-bRz" secondAttribute="trailing" constant="6" id="ASX-Xj-pNI"/>
+                <constraint firstAttribute="trailing" secondItem="xgA-Dx-jb1" secondAttribute="trailing" constant="5" id="6Xl-D5-9t4"/>
                 <constraint firstAttribute="trailing" secondItem="VF8-9i-xlF" secondAttribute="trailing" id="DPz-yi-ArV"/>
                 <constraint firstItem="VF8-9i-xlF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FFo-dc-N3A"/>
                 <constraint firstItem="ure-G0-efb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="RKe-pc-dx7"/>
                 <constraint firstItem="LEC-gr-DaV" firstAttribute="top" secondItem="VF8-9i-xlF" secondAttribute="bottom" constant="5" id="Wj1-PE-OJT"/>
                 <constraint firstItem="LEC-gr-DaV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dVi-9n-ceV"/>
                 <constraint firstAttribute="bottom" secondItem="ure-G0-efb" secondAttribute="bottom" constant="5" id="ghS-Dg-QOb"/>
+                <constraint firstItem="xgA-Dx-jb1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="sjO-gT-wIW"/>
                 <constraint firstItem="VF8-9i-xlF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vsF-PY-yrL"/>
-                <constraint firstItem="8mS-yJ-bRz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="yef-UN-Tnt"/>
                 <constraint firstItem="ure-G0-efb" firstAttribute="top" secondItem="LEC-gr-DaV" secondAttribute="bottom" constant="3" id="zC8-i6-fQj"/>
             </constraints>
             <size key="customSize" width="185" height="203"/>
+            <connections>
+                <outlet property="countBtn" destination="xgA-Dx-jb1" id="gys-Gf-ySO"/>
+                <outlet property="coverImgView" destination="VF8-9i-xlF" id="7sL-2Y-ze5"/>
+                <outlet property="locationBtn" destination="ure-G0-efb" id="kWf-I4-T99"/>
+                <outlet property="tagLabel" destination="LEC-gr-DaV" id="1mV-d5-HLv"/>
+            </connections>
             <point key="canvasLocation" x="37.600000000000001" y="134.48275862068968"/>
         </collectionViewCell>
     </objects>
