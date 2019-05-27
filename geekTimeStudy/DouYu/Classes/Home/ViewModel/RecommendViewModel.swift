@@ -11,14 +11,20 @@ import UIKit
 class RecommendViewModel {
     
     lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
-    private lazy var bigData: AnchorGroup = AnchorGroup()
-    private lazy var pretty: AnchorGroup = AnchorGroup()
+    fileprivate lazy var bigData: AnchorGroup = AnchorGroup()
+    fileprivate lazy var pretty: AnchorGroup = AnchorGroup()
     
+    lazy var banners : [Banner] = [Banner]()
+}
+
+
+// MARK: - get recommed data
+extension RecommendViewModel {
     func requestData(finished: @escaping ()->()) {
-//        NetworkTools.requestData(type: NetworkMethodType.GET, url: "https://httpbin.org/get", param: nil) { (result) in
-//            print(result)
-//            finished()
-//        }
+        //        NetworkTools.requestData(type: NetworkMethodType.GET, url: "https://httpbin.org/get", param: nil) { (result) in
+        //            print(result)
+        //            finished()
+        //        }
         
         let dgroup = DispatchGroup()
         
@@ -36,6 +42,7 @@ class RecommendViewModel {
                 let anchor = AnchorModel(dic: dic)
                 self.bigData.anchors.append(anchor)
             }
+            print("获取热门的数据")
             dgroup.leave()
         }
         
@@ -54,13 +61,14 @@ class RecommendViewModel {
                 let anchor = AnchorModel(dic: dic)
                 self.pretty.anchors.append(anchor)
             }
+            print("获取颜值的数据")
             dgroup.leave()
         }
         
         //获取2-12的三部分数据
         dgroup.enter()
         NetworkTools.requestData(type: .GET, url: "https://capi.douyucdn.cn/api/v1/getHotCate", param: ["limit" : "4", "offset" : "0", "time" : NSDate.getCurrentTime()]) { (result) in
-//            print(result)
+            //            print(result)
             //1.拿到字典
             guard let resultDic = result as? NSDictionary else {return}
             //2.根据data，获取数组
@@ -72,20 +80,38 @@ class RecommendViewModel {
             }
             
             for group in self.anchorGroups {
-                print("----------")
-                print(group.tag_name)
+//                print("----------")
+//                print(group.tag_name)
                 for anchor in group.anchors {
-                    print(anchor.nickname)
+//                    print(anchor.nickname)
                 }
             }
+            print("获取其他数据")
             dgroup.leave()
         }
         
         dgroup.notify(queue: DispatchQueue.main) {
-            self.anchorGroups.append(self.pretty)
-            self.anchorGroups.append(self.bigData)
+            self.anchorGroups.insert(self.pretty, at: 0)
+            self.anchorGroups.insert(self.bigData, at: 0)
             finished()
         }
         
+    }
+}
+
+
+extension RecommendViewModel {
+    func getBannerData(finished: @escaping () -> ()){
+        NetworkTools.requestData(type: .GET, url: "http://www.douyutv.com/api/v1/slide/6") { (result) in
+            guard let resultDic = result as? NSDictionary else {return}
+            
+            guard let resultArray = resultDic["data"] as? [[String : NSObject]] else {return}
+            
+            for dic in resultArray {
+                let banner = Banner(dic: dic)
+                self.banners.append(banner)
+            }
+            finished()
+        }
     }
 }

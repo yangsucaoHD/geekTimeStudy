@@ -85,7 +85,7 @@
                 <outlet property="locationBtn" destination="ure-G0-efb" id="kWf-I4-T99"/>
                 <outlet property="tagLabel" destination="LEC-gr-DaV" id="1mV-d5-HLv"/>
             </connections>
-            <point key="canvasLocation" x="37.600000000000001" y="134.48275862068968"/>
+            <point key="canvasLocation" x="-340" y="74.212893553223395"/>
         </collectionViewCell>
     </objects>
     <resources>

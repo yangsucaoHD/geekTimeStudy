@@ -12,6 +12,8 @@ private let kItemMargin: CGFloat = 10
 private let kItemWidth: CGFloat = (kScreenWidth - 3 * kItemMargin) / 2
 private let kNormalItemHeight: CGFloat = kItemWidth * 3 / 4
 private let kPrettyItemHeight: CGFloat = kItemWidth * 4 / 3
+private let kBannerHeight:CGFloat = kScreenWidth * 3 / 8
+private let kGameViewHeight:CGFloat = 90
 private let kNormalCollectionViewCellID = "kNormalCollectionViewCellID"
 private let kPrettyCollectionViewCellID = "kPrettyCollectionViewCellID"
 private let kCollectionViewHeaderID = "kCollectionViewHeaderID"
@@ -20,6 +22,18 @@ private let kHeaderViewHeight: CGFloat = 50
 class RecommendViewController: UIViewController {
     
         fileprivate lazy var viewModel = RecommendViewModel()
+    
+        fileprivate lazy var banner: RecommendBannerView = {
+            let banner = RecommendBannerView.recommendbanner()
+            banner.frame = CGRect(x: 0, y: -kGameViewHeight-kBannerHeight, width: kScreenWidth, height: kBannerHeight)
+            return banner
+        }()
+    
+    fileprivate lazy var gameView: RecommendGameView = {
+       let gameView = RecommendGameView.recommendGame()
+        gameView.frame = CGRect(x: 0, y: -kGameViewHeight, width: kScreenWidth, height: kGameViewHeight)
+        return gameView
+    }()
     
         fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
         let layout = UICollectionViewFlowLayout()
@@ -45,11 +59,17 @@ class RecommendViewController: UIViewController {
 
 }
 
+
 // MARK: - 设置UI界面
 extension RecommendViewController {
     func setupUI() {
         view.addSubview(collectionView)
         collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        
+        collectionView.addSubview(banner)
+        collectionView.contentInset = UIEdgeInsets(top: kBannerHeight + kGameViewHeight, left: 0, bottom: 0, right: 0)
+        
+        collectionView.addSubview(gameView)
     }
 }
 
@@ -101,6 +121,12 @@ extension RecommendViewController {
     func requestRecommendData() {
         viewModel.requestData {
             self.collectionView.reloadData()
+            
+            self.gameView.group = self.viewModel.anchorGroups
+        }
+        
+        viewModel.getBannerData {
+            self.banner.banners = self.viewModel.banners
         }
     }
 }
