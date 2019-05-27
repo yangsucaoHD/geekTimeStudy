@@ -12,10 +12,8 @@ private let kGameCollectionCell = "kGameCollectionCell"
 class RecommendGameView: UIView {
     @IBOutlet weak var gameCollectionView: UICollectionView!
     
-    var group: [AnchorGroup]? {
+    var group: [GameBaseModel]? {
         didSet {
-            group?.removeFirst()
-            group?.removeFirst()
             gameCollectionView.reloadData()
         }
     }
@@ -39,9 +37,9 @@ class RecommendGameView: UIView {
 }
 
 extension RecommendGameView {
-    class func recommendGame() -> RecommendGameView{
-        let recommendGame = Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
-        return recommendGame
+    class func recommendGameView() -> RecommendGameView{
+        let recommendGameView = Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
+        return recommendGameView
     }
 }
 

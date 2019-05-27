@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCollectionViewCell" customModule="geekTimeStudy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="90" height="154"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="90" height="154"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqW-0y-2Tv">
-                        <rect key="frame" x="22.5" y="10" width="45" height="45"/>
+                        <rect key="frame" x="22.5" y="54.5" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="pKb-0R-qe9"/>
                             <constraint firstAttribute="width" constant="45" id="wgN-RF-tJO"/>
@@ -32,25 +32,34 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7n-nT-5zV">
-                        <rect key="frame" x="29.5" y="60" width="31" height="25"/>
+                        <rect key="frame" x="29.5" y="104.5" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20G-eb-HWq">
+                        <rect key="frame" x="0.0" y="154" width="90" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.1405149647887324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Qyl-XB-D52"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="mqW-0y-2Tv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="LOG-2b-jVI"/>
+                <constraint firstAttribute="bottom" secondItem="20G-eb-HWq" secondAttribute="bottom" constant="-1" id="EhE-7X-tEP"/>
+                <constraint firstItem="20G-eb-HWq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Imz-bo-DDL"/>
                 <constraint firstItem="Y7n-nT-5zV" firstAttribute="top" secondItem="mqW-0y-2Tv" secondAttribute="bottom" constant="5" id="NLP-lo-tEt"/>
                 <constraint firstItem="mqW-0y-2Tv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="iLo-fo-9Fr"/>
                 <constraint firstItem="Y7n-nT-5zV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="o2M-aG-d5f"/>
-                <constraint firstAttribute="bottom" secondItem="Y7n-nT-5zV" secondAttribute="bottom" constant="5" id="xGm-93-qni"/>
+                <constraint firstItem="mqW-0y-2Tv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="oCC-Xa-5iu"/>
+                <constraint firstAttribute="trailing" secondItem="20G-eb-HWq" secondAttribute="trailing" id="tb8-Ki-iJw"/>
             </constraints>
-            <size key="customSize" width="252" height="270"/>
+            <size key="customSize" width="252" height="334"/>
             <connections>
                 <outlet property="imgView" destination="mqW-0y-2Tv" id="4Yc-9f-f5i"/>
                 <outlet property="nameLabel" destination="Y7n-nT-5zV" id="u8B-kg-WN4"/>
             </connections>
-            <point key="canvasLocation" x="-59.200000000000003" y="138.53073463268368"/>
+            <point key="canvasLocation" x="-59.200000000000003" y="167.31634182908547"/>
         </collectionViewCell>
     </objects>
 </document>

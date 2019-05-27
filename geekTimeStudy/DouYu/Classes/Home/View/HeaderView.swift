@@ -10,8 +10,8 @@ import UIKit
 
 class HeaderView: UICollectionReusableView {
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var moreBtn: UIButton!
     
     var group: AnchorGroup? {
         didSet {
@@ -24,6 +24,11 @@ class HeaderView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    class func topHeaderView() -> HeaderView {
+        let topView = Bundle.main.loadNibNamed("HeaderView", owner: nil, options: nil)?.first as! HeaderView
+        return topView
     }
     
 }

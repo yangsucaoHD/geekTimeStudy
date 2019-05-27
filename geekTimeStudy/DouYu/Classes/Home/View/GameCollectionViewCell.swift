@@ -11,7 +11,7 @@ import UIKit
 class GameCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    var item: AnchorGroup? {
+    var item: GameBaseModel? {
         didSet {
             let url = URL(string: item?.icon_url ?? "")
             imgView.kf.setImage(with: url)

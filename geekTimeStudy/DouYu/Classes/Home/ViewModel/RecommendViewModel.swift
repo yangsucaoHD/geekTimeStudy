@@ -8,9 +8,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel :BaseViewModel {
     
-    lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
     fileprivate lazy var bigData: AnchorGroup = AnchorGroup()
     fileprivate lazy var pretty: AnchorGroup = AnchorGroup()
     
@@ -67,25 +66,8 @@ extension RecommendViewModel {
         
         //获取2-12的三部分数据
         dgroup.enter()
-        NetworkTools.requestData(type: .GET, url: "https://capi.douyucdn.cn/api/v1/getHotCate", param: ["limit" : "4", "offset" : "0", "time" : NSDate.getCurrentTime()]) { (result) in
-            //            print(result)
-            //1.拿到字典
-            guard let resultDic = result as? NSDictionary else {return}
-            //2.根据data，获取数组
-            guard let resultArray = resultDic["data"] as? [[String : NSObject]] else {return}
-            //3.遍历数组获取字典，并将字典转换成模型对象
-            for dic in resultArray {
-                let group = AnchorGroup(dic: dic)
-                self.anchorGroups.append(group)
-            }
-            
-            for group in self.anchorGroups {
-//                print("----------")
-//                print(group.tag_name)
-                for anchor in group.anchors {
-//                    print(anchor.nickname)
-                }
-            }
+        self.loadData(url: "https://capi.douyucdn.cn/api/v1/getHotCate") {
+            finished()
             print("获取其他数据")
             dgroup.leave()
         }
@@ -95,7 +77,6 @@ extension RecommendViewModel {
             self.anchorGroups.insert(self.bigData, at: 0)
             finished()
         }
-        
     }
 }
 

@@ -34,6 +34,13 @@
 		A43BD4C322952CF300F22C4A /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4C222952CF300F22C4A /* AnchorModel.swift */; };
 		A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */; };
 		A454488022840ED200FF66EC /* CManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A454487F22840ED200FF66EC /* CManager.m */; };
+		A455190D229B891000EA2428 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455190C229B891000EA2428 /* GameViewModel.swift */; };
+		A455190F229B8B1F00EA2428 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455190E229B8B1F00EA2428 /* Game.swift */; };
+		A4551913229B909700EA2428 /* GameBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4551912229B909700EA2428 /* GameBaseModel.swift */; };
+		A4551915229BBD8900EA2428 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4551914229BBD8900EA2428 /* AmuseViewModel.swift */; };
+		A4551917229BBFD100EA2428 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4551916229BBFD100EA2428 /* AmuseViewController.swift */; };
+		A4551919229BC02200EA2428 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4551918229BC02200EA2428 /* BaseViewModel.swift */; };
+		A455191B229BCA9F00EA2428 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455191A229BCA9F00EA2428 /* BaseViewController.swift */; };
 		A4698F9E2293FA1F00E4C13C /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */; };
 		A4698FA22294CC2800E4C13C /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4698FA02294CC2800E4C13C /* NormalCollectionViewCell.swift */; };
 		A4698FA32294CC2800E4C13C /* NormalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4698FA12294CC2800E4C13C /* NormalCollectionViewCell.xib */; };
@@ -52,6 +59,7 @@
 		A4DCF65C22979364006BB28F /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DCF65B22979364006BB28F /* RecommendGameView.xib */; };
 		A4DCF65F229B74D0006BB28F /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DCF65D229B74D0006BB28F /* GameCollectionViewCell.swift */; };
 		A4DCF660229B74D0006BB28F /* GameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DCF65E229B74D0006BB28F /* GameCollectionViewCell.xib */; };
+		A4DCF662229B821C006BB28F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DCF661229B821C006BB28F /* GameViewController.swift */; };
 		A4DE378A22893E6C005B8B9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE378922893E6C005B8B9F /* Test.swift */; };
 		A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A942283FB8500E1718D /* AppDelegate.m */; };
 		A4E11A982283FB8500E1718D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E11A972283FB8500E1718D /* ViewController.m */; };
@@ -144,6 +152,13 @@
 		A454487C22840E6700FF66EC /* NSObject+MyCalculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MyCalculate.m"; sourceTree = "<group>"; };
 		A454487E22840ED200FF66EC /* CManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CManager.h; sourceTree = "<group>"; };
 		A454487F22840ED200FF66EC /* CManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CManager.m; sourceTree = "<group>"; };
+		A455190C229B891000EA2428 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		A455190E229B8B1F00EA2428 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A4551912229B909700EA2428 /* GameBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBaseModel.swift; sourceTree = "<group>"; };
+		A4551914229BBD8900EA2428 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
+		A4551916229BBFD100EA2428 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		A4551918229BC02200EA2428 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A455191A229BCA9F00EA2428 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		A4698FA02294CC2800E4C13C /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4698FA12294CC2800E4C13C /* NormalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -162,6 +177,7 @@
 		A4DCF65B22979364006BB28F /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		A4DCF65D229B74D0006BB28F /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4DCF65E229B74D0006BB28F /* GameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4DCF661229B821C006BB28F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A4DE378922893E6C005B8B9F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A4E11A902283FB8500E1718D /* geekTimeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geekTimeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E11A932283FB8500E1718D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -381,6 +397,9 @@
 			children = (
 				A40D3CC4228D638600EA367E /* HomeViewController.swift */,
 				A4698F9D2293FA1F00E4C13C /* RecommendViewController.swift */,
+				A4DCF661229B821C006BB28F /* GameViewController.swift */,
+				A4551916229BBFD100EA2428 /* AmuseViewController.swift */,
+				A455191A229BCA9F00EA2428 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +433,8 @@
 				A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */,
 				A43BD4C222952CF300F22C4A /* AnchorModel.swift */,
 				A4DCF65322968CD5006BB28F /* Banner.swift */,
+				A455190E229B8B1F00EA2428 /* Game.swift */,
+				A4551912229B909700EA2428 /* GameBaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +494,9 @@
 			isa = PBXGroup;
 			children = (
 				A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */,
+				A455190C229B891000EA2428 /* GameViewModel.swift */,
+				A4551914229BBD8900EA2428 /* AmuseViewModel.swift */,
+				A4551918229BC02200EA2428 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -945,10 +969,13 @@
 				A4F38CA72285173B00F0110A /* DDLabelMaker.m in Sources */,
 				A4ECBA702284F96600746ABD /* ChainFunctionForUITableView.m in Sources */,
 				A4ECBA4E2284EEDE00746ABD /* HDRequestMgr.m in Sources */,
+				A455190D229B891000EA2428 /* GameViewModel.swift in Sources */,
+				A455191B229BCA9F00EA2428 /* BaseViewController.swift in Sources */,
 				A4F38CA32285173B00F0110A /* DDViewMaker.m in Sources */,
 				A4ECBA752284F96700746ABD /* ChainFunctionForUITextView.m in Sources */,
 				A40D3CDB22924CF300EA367E /* PageContentView.swift in Sources */,
 				A4F38CAF22851E9A00F0110A /* ViewController+Chain.m in Sources */,
+				A4551919229BC02200EA2428 /* BaseViewModel.swift in Sources */,
 				A454488022840ED200FF66EC /* CManager.m in Sources */,
 				A40D3CCD228E995000EA367E /* Person.swift in Sources */,
 				A40D3CBD228D5B1F00EA367E /* MainViewController.swift in Sources */,
@@ -967,21 +994,26 @@
 				A4E11AA32283FB8700E1718D /* main.m in Sources */,
 				A40D3CD7229234BF00EA367E /* PageTitleView.swift in Sources */,
 				A40D3CCF228E99E300EA367E /* Person+Extension.swift in Sources */,
+				A4DCF662229B821C006BB28F /* GameViewController.swift in Sources */,
 				A4698F9E2293FA1F00E4C13C /* RecommendViewController.swift in Sources */,
 				A4DCF65F229B74D0006BB28F /* GameCollectionViewCell.swift in Sources */,
 				A4ECBA6D2284F96600746ABD /* ChainFunctionForUILabel.m in Sources */,
 				A40D3CC5228D638600EA367E /* HomeViewController.swift in Sources */,
 				A4ECBA6C2284F96600746ABD /* ChainFunctionForCALayer.m in Sources */,
 				A4ECBA722284F96700746ABD /* ChainFunctionForUIView.m in Sources */,
+				A4551913229B909700EA2428 /* GameBaseModel.swift in Sources */,
 				A4E11A952283FB8500E1718D /* AppDelegate.m in Sources */,
 				A454487D22840E6700FF66EC /* NSObject+MyCalculate.m in Sources */,
 				A4F38CA62285173B00F0110A /* DDMutAttributedStringMaker.m in Sources */,
 				A40D3CC8228D655300EA367E /* SwiftLearning.swift in Sources */,
 				A43BD4C1229526DB00F22C4A /* AnchorGroup.swift in Sources */,
+				A4551915229BBD8900EA2428 /* AmuseViewModel.swift in Sources */,
+				A455190F229B8B1F00EA2428 /* Game.swift in Sources */,
 				A4F38CAB22851DBB00F0110A /* ViewController+Promise.m in Sources */,
 				A4ECBA712284F96600746ABD /* ChainFunctionForUIScrollView.m in Sources */,
 				A40D3C982289569D00EA367E /* ABTestViewController.m in Sources */,
 				A4ECBA732284F96700746ABD /* ChainFunctionForUIButton.m in Sources */,
+				A4551917229BBFD100EA2428 /* AmuseViewController.swift in Sources */,
 				A4F38CB32285554500F0110A /* ViewController+Response.m in Sources */,
 				A4DCF65422968CD5006BB28F /* Banner.swift in Sources */,
 				A4F38CA82285173B00F0110A /* DDButtonMaker.m in Sources */,

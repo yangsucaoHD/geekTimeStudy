@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "geekTimeStudy/DouYu/Classes/Home/ViewModel/RecommendViewModel.swift"
-            timestampString = "580615430.658649"
+            filePath = "geekTimeStudy/DouYu/Classes/Home/Controller/AmuseViewController.swift"
+            timestampString = "580639192.0834481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "getBannerData(finished:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

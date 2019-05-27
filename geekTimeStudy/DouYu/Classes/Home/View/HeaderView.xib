@@ -53,7 +53,7 @@
             </constraints>
             <connections>
                 <outlet property="imgView" destination="BaT-hW-RDv" id="3fy-3u-Ob8"/>
-                <outlet property="moreBtn" destination="vcK-e2-e7j" id="Kat-Jd-dKy"/>
+                <outlet property="moreBtn" destination="vcK-e2-e7j" id="JZa-6n-MLZ"/>
                 <outlet property="nameLabel" destination="gpP-6a-ToY" id="Ke0-F3-fCw"/>
             </connections>
             <point key="canvasLocation" x="129.59999999999999" y="152.92353823088456"/>
