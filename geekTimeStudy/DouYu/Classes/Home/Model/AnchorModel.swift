@@ -18,7 +18,7 @@ class AnchorModel: NSObject {
     var anchor_city: String = ""
     
     
-    init(dic: [String : NSObject]) {
+    init(dic: [String : Any]) {
         super.init()
         setValuesForKeys(dic)
     }

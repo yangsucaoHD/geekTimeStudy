@@ -11,7 +11,7 @@ import UIKit
 private let kBannerHeight:CGFloat = kScreenWidth * 3 / 8
 private let kGameViewHeight:CGFloat = 90
 
-class RecommendViewController: BaseViewController {
+class RecommendViewController: BaseRecommendViewController {
     
         fileprivate lazy var viewModel = RecommendViewModel()
     
@@ -86,6 +86,7 @@ extension RecommendViewController {
             group.removeFirst()
             group.removeFirst()
             self.gameView.group = group
+            self.loadDataFinished()
         }
         
         viewModel.getBannerData {

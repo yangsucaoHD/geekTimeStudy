@@ -15,14 +15,14 @@ enum NetworkMethodType {
 }
 
 class NetworkTools {
-    class func requestData(type: NetworkMethodType, url: URLConvertible, param: [String : String]? = nil, finishedBolock: @escaping (_ result : AnyObject)->()) {
+    class func requestData(type: NetworkMethodType, url: URLConvertible, param: [String : Any]? = nil, finishedBolock: @escaping (_ result : AnyObject)->()) {
         let methodType = type == .GET ? HTTPMethod.get :  HTTPMethod.post
-        Alamofire.request(url, method: methodType).responseJSON { (response) in
+        Alamofire.request(url, method: methodType, parameters: param).responseJSON { (response) in
             guard let result = response.result.value else {
-//                print(response.result.error)
+                //                print(response.result.error)
                 return
             }
-//            print(result)
+            //            print(result)
             finishedBolock(result as AnyObject)
         }
     }

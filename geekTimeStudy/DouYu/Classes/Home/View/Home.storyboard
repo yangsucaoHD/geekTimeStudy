@@ -31,8 +31,7 @@
         <!--首页-->
         <scene sceneID="x9K-6s-V44">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fjY-3J-btd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6P-Di-ufn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6P-Di-ufn" customClass="CustomNavigationController" customModule="geekTimeStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="tabDiscovery" selectedImage="tabDiscoveryHL" id="SmH-m4-dSG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="frh-XR-x28">
@@ -44,6 +43,7 @@
                         <segue destination="KC4-ig-7VP" kind="relationship" relationship="rootViewController" id="o2f-Ts-7dR"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjY-3J-btd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="220" y="-606.74662668665667"/>
         </scene>

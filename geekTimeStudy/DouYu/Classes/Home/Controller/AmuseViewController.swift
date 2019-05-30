@@ -9,7 +9,7 @@
 import UIKit
 private let kAmuseMenuHeight: CGFloat = 200
 
-class AmuseViewController: BaseViewController {
+class AmuseViewController: BaseRecommendViewController {
     fileprivate lazy var amuseVM =  AmuseViewModel()
     fileprivate lazy var amuseMenu: AmuseMenuView = {
         let menu = AmuseMenuView.amuseMenu()
@@ -35,6 +35,7 @@ extension AmuseViewController {
             self.amuseMenu.group = self.amuseVM.anchorGroups
             self.amuseMenu.group?.removeFirst()
             self.collectionView.reloadData()
+            self.loadDataFinished()
         }
     }
 }

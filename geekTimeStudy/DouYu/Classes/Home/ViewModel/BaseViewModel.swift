@@ -14,8 +14,9 @@ class BaseViewModel {
 }
 
 extension BaseViewModel {
-    func loadData(url:String, finished: @escaping () -> ()) {
-        NetworkTools.requestData(type: .GET, url: url) { (result) in
+   
+    func loadData(url:String, param:[String : Any]? = nil, finished: @escaping () -> ()) {
+        NetworkTools.requestData(type: .GET, url: url, param:param) { (result) in
             guard let resultDic = result as? [String : Any] else {return}
             guard let dicArray = result["data"] as? [[String : Any]] else {return}
             for dic in dicArray {
