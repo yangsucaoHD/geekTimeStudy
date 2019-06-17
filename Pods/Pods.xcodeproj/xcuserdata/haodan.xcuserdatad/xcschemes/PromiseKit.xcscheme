@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "994CDB4EFE76DEBA1A6BBF69FA1AF0F1"
+               BlueprintIdentifier = "AF0D29361ECC698CEFFAB0F1530C0E3B"
                BuildableName = "libPromiseKit.a"
                BlueprintName = "PromiseKit"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Flutter
 
 let kTitleViewHeight: CGFloat = 40
 
@@ -65,12 +66,33 @@ extension HomeViewController {
 //
         //便利构造函数
         navigationItem.leftBarButtonItem = UIBarButtonItem(imgName: "Image_launch_logo")
-        let historyItem = UIBarButtonItem(imgName: "agreementCheck", highlightedImgName: "agreementCheck", size: size)
+        let historyItem = UIBarButtonItem(title: "flutter", style: UIBarButtonItemStyle.plain, target: self, action: #selector(handleButtonAction))
+//            UIBarButtonItem(imgName: "agreementCheck", highlightedImgName: "agreementCheck", size: size, target: self, action: #selector(handleButtonAction))
+        
         let searchItem = UIBarButtonItem(imgName: "dy_navi_search", highlightedImgName: "dy_navi_search", size: size)
         let sweepItem = UIBarButtonItem(imgName: "home_newSaoicon", highlightedImgName: "home_newSaoicon", size: size)
         navigationItem.rightBarButtonItems = [historyItem, searchItem, sweepItem]
     }
+    
+    // MARK: - flutter 页面混编页面跳转
+    @objc func handleButtonAction() {
+        let flutterViewController = FlutterViewController()
+        self.present(flutterViewController, animated: false, completion: nil)
+    }
+    
+    private func receiveBatteryLevel(result: FlutterResult) {
+        let device = UIDevice.current
+        device.isBatteryMonitoringEnabled = true
+        if device.batteryState == UIDeviceBatteryState.unknown {
+            result(FlutterError(code: "UNAVAILABLE",
+                                message: "Battery info unavailable",
+                                details: nil))
+        } else {
+            result(Int(device.batteryLevel * 100))
+        }
+    }
 }
+
 
 // MARK: - 实现PageTitleViewDelegate代理
 extension HomeViewController: PageTitleViewDelegate {

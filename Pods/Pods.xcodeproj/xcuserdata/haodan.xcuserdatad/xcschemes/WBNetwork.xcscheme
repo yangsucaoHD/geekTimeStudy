@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "910B4CB0B52A753DE78253908C9B112F"
+               BlueprintIdentifier = "55A970CB0500E27245A214DAA62E8C9E"
                BuildableName = "libWBNetwork.a"
                BlueprintName = "WBNetwork"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -15,12 +15,18 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - path_provider
   - JKAlertX (0.3.5)
   - Kingfisher (4.10.1)
   - Masonry (1.1.0)
   - OMPromises (0.8.1):
     - OMPromises/Core (= 0.8.1)
   - OMPromises/Core (0.8.1)
+  - path_provider (0.0.1):
+    - Flutter
   - PromiseKit (6.8.4):
     - PromiseKit/CorePromise (= 6.8.4)
     - PromiseKit/Foundation (= 6.8.4)
@@ -42,10 +48,13 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Alamofire
+  - "Flutter (from `/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/engine`)"
+  - "FlutterPluginRegistrant (from `/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/FlutterPluginRegistrant`)"
   - JKAlertX
   - Kingfisher
   - Masonry
   - OMPromises (~> 0.8.1)
+  - "path_provider (from `/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/.symlinks/path_provider/ios`)"
   - PromiseKit (~> 6.8)
   - ReactiveCocoa (= 2.1.8)
   - WBNetwork
@@ -62,17 +71,28 @@ SPEC REPOS:
     - ReactiveCocoa
     - WBNetwork
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+  path_provider:
+    :path: "/Developer/极客/geekTimeStudy/flutter_module/.ios/Flutter/.symlinks/path_provider/ios"
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  FlutterPluginRegistrant: a56e654587b072c4c97e7d82a90a432d54edb59b
   JKAlertX: f0dfc46337378b2084c54cd02417d9830975e8a4
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OMPromises: aa67585ad14d3cfbf8fbf5b339d4e7cbb97ad6ec
+  path_provider: 09407919825bfe3c2deae39453b7a5b44f467873
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   WBNetwork: 79a337728380cdfeb08eab2a7b79b1cd60c18a8c
 
-PODFILE CHECKSUM: c2640c1eeaa5ac9001189440fbacbd59a45914a4
+PODFILE CHECKSUM: d82fa45ba10ba82a33ccab73e8ab369fb0863602
 
 COCOAPODS: 1.5.3

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5420F0338C7D8FC05C5B12BEFEA5EDEE"
+               BlueprintIdentifier = "C739B9F63A774187A00E67A52598E322"
                BuildableName = "libPods-geekTimeStudy.a"
                BlueprintName = "Pods-geekTimeStudy"
                ReferencedContainer = "container:Pods.xcodeproj">

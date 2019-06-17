@@ -28,6 +28,7 @@
 		A40D3CDB22924CF300EA367E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDA22924CF300EA367E /* PageContentView.swift */; };
 		A40D3CDD2292514400EA367E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3CDC2292514400EA367E /* UIColor+Extension.swift */; };
 		A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A411B86922891AB60060C0CF /* libOMPromises.a */; };
+		A4272029229FC14E00E7112F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4272028229FC14D00E7112F /* libc++.tbd */; };
 		A43BD4BD2294EB1800F22C4A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */; };
 		A43BD4BF2295239200F22C4A /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4BE2295239200F22C4A /* NSDate+Extension.swift */; };
 		A43BD4C1229526DB00F22C4A /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */; };
@@ -125,6 +126,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A4F0607922B744DB000EF557 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0AF9FF2A617D17145EE3A68E /* Pods-geekTimeStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekTimeStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geekTimeStudy/Pods-geekTimeStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekTimeStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +169,7 @@
 		A411B86722891A8E0060C0CF /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86922891AB60060C0CF /* libOMPromises.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOMPromises.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411B86B2289381B0060C0CF /* geekTimeStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geekTimeStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4272028229FC14D00E7112F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A43BD4BC2294EB1800F22C4A /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		A43BD4BE2295239200F22C4A /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		A43BD4C0229526DB00F22C4A /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
@@ -280,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4272029229FC14E00E7112F /* libc++.tbd in Frameworks */,
 				A411B86A22891AB60060C0CF /* libOMPromises.a in Frameworks */,
 				8D6C72D3BA7A33CA4A83BFEB /* libPods-geekTimeStudy.a in Frameworks */,
 			);
@@ -800,6 +816,7 @@
 		F4EEAA4EADFEA139F8846989 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4272028229FC14D00E7112F /* libc++.tbd */,
 				A411B86922891AB60060C0CF /* libOMPromises.a */,
 				A411B86722891A8E0060C0CF /* libPromiseKit.a */,
 				3372F1A5A307455231F11562 /* libPods-geekTimeStudy.a */,
@@ -820,6 +837,9 @@
 				A4E11A8C2283FB8500E1718D /* Sources */,
 				A4E11A8D2283FB8500E1718D /* Frameworks */,
 				A4E11A8E2283FB8500E1718D /* Resources */,
+				A4272020229F883500E7112F /* ShellScript */,
+				22490A1B19A0D89C0B5CD555 /* [CP] Embed Pods Frameworks */,
+				A4F0607922B744DB000EF557 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -954,6 +974,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22490A1B19A0D89C0B5CD555 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-geekTimeStudy/Pods-geekTimeStudy-frameworks.sh",
+				"${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geekTimeStudy/Pods-geekTimeStudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4272020229F883500E7112F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"/Developer/flutter/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"/Developer/flutter/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
 		C1A66BFD4F054B0FA35632A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1166,6 +1225,7 @@
 /* Begin XCBuildConfiguration section */
 		A4E11ABA2283FB8700E1718D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF9FF2A617D17145EE3A68E /* Pods-geekTimeStudy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1225,6 +1285,7 @@
 		};
 		A4E11ABB2283FB8700E1718D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6047A5E2071598735CD581 /* Pods-geekTimeStudy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1287,6 +1348,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flutter_module/.ios/Flutter",
+					"$(PROJECT_DIR)/flutter_module/.ios/Flutter/engine",
+				);
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1313,6 +1380,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J669Y64Z9Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flutter_module/.ios/Flutter",
+					"$(PROJECT_DIR)/flutter_module/.ios/Flutter/engine",
+				);
 				INFOPLIST_FILE = geekTimeStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

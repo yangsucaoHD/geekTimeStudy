@@ -24,6 +24,13 @@ target 'geekTimeStudy' do
   # use_frameworks!
 
   # Pods for geekTimeStudy
+  
+  
+  #Flutter工程路径
+  flutter_application_path = '/Developer/极客/geekTimeStudy/flutter_module'
+  #读取 podhelper.rb 的Ruby代码在当前目录执行
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+  
 
   target 'geekTimeStudyTests' do
     inherit! :search_paths
